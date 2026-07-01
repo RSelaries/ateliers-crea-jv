@@ -1,0 +1,29 @@
+:root {
+    /* ## Colors ## */
+    --background-color: #0e0e0e;
+    --panel-color: #151515;
+    
+    --hover-background-color: #2b2b2b;
+    --border-color: #2d2d2d;
+    --highlight-color: #65BED4;
+    --highlight-color-transparent: #008B8B4f;
+
+    /* Text colors */
+    --external-link-color: #66e;
+    --redirection-color: #F2BF4A;
+    --text-color: #f1f1f1;
+    --text-color-muted: #898989;
+}
+
+body {
+    font-family: prompt;
+    font-weight: 300;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+}
+
