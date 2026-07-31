@@ -17,15 +17,15 @@
                 <details open>
                     <summary>
                         <a href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
-                            <div style="mask-image: url({page.icon});" class="page-icon"></div>{page.title}
+                            <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                         </a>
                     </summary>
-                    <ol>
+                    <ol class="subpages-list">
                         <!-- Subpages (if there are any) -->
                         {#each page.subpages as subpage}
                         <li>
                             <a class="subpage" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}/{subpage.slug}">
-                                <div style="mask-image: url({page.icon});" class="page-icon"></div>{subpage.title}
+                                <div style="mask-image: url({base}/{subpage.icon});" class="page-icon"></div>{subpage.title}
                             </a>
                         </li>
                         {/each}
@@ -33,7 +33,7 @@
                 </details>
                 {:else}
                 <a href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
-                    <div style="mask-image: url({page.icon});" class="page-icon"></div>{page.title}
+                    <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                 </a>
                 {/if}
             </li>
@@ -72,6 +72,17 @@
     }
     details.category:open > summary {
         background-image: url('$lib/assets/icons/folder-opened.svg');
+    }
+
+    .category li.page > details:open {
+        ol.subpages-list {
+            margin: 0;
+            padding-left: 20px;
+    
+            li::marker {
+                content: none;
+            }
+        }
     }
 
     .category ol {

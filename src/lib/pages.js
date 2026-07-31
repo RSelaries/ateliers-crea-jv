@@ -8,7 +8,7 @@ export default
                 {
                     title: "Introduction",
                     slug: "",
-                    icon: "/page-icons/introduction.svg",
+                    icon: "page-icons/introduction.svg",
                 },
             ]
         },
@@ -19,39 +19,29 @@ export default
                 {
                     title: "Découverte",
                     slug: "",
-                    icon: "/page-icons/decouverte.svg",
+                    icon: "page-icons/decouverte.svg",
                 },
                 {
                     title: "Devine le nombre",
                     slug: "devine-le-nombre",
-                    icon: "/page-icons/devine-nombre.svg",
+                    icon: "page-icons/devine-nombre.svg",
                     subpages: [
-                        {
-                            title: "Aller plus loin",
-                            slug: "plus-loin",
-                            icon: "",
-                        },
-                        {
-                            title: "Aller plus loin 2",
-                            slug: "plus-loin",
-                            icon: "",
-                        },
                     ],
                 },
                 {
                     title: "Jeu de plateforme",
                     slug: "jeu-de-plateforme",
-                    icon: "",
+                    icon: "page-icons/platformer.svg",
                 },
                 {
                     title: "Visual Novel",
                     slug: "visual-novel",
-                    icon: "",
+                    icon: "page-icons/visual-novel.svg",
                 },
                 {
                     title: "Walking Simulator",
                     slug: "walking-simulator",
-                    icon: "",
+                    icon: "page-icons/walking-sim.svg",
                 },
             ]
         },
@@ -62,37 +52,37 @@ export default
                 {
                     title: "Godot",
                     slug: "",
-                    icon: "/page-icons/godot.svg",
+                    icon: "page-icons/godot.svg",
                 },
                 {
                     title: "L'Interface de Godot",
                     slug: "interface",
-                    icon: "/page-icons/interface-godot.svg",
+                    icon: "page-icons/interface-godot.svg",
                 },
                 {
                     title: "Nodes",
                     slug: "nodes",
-                    icon: "/page-icons/nodes.svg",
+                    icon: "page-icons/nodes.svg",
                 },
                 {
                     title: "Interface utilisateur",
                     slug: "control",
-                    icon: "/page-icons/control.svg",
+                    icon: "page-icons/control.svg",
                 },
                 {
                     title: "Shaders",
                     slug: "shaders",
-                    icon: "",
+                    icon: "page-icons/shaders.svg",
                 },
                 {
-                    title: "Pluins",
+                    title: "Plugins",
                     slug: "plugins",
-                    icon: "",
+                    icon: "page-icons/plugins.svg",
                 },
                 {
                     title: "Tutoriels",
                     slug: "tutoriels",
-                    icon: "",
+                    icon: "page-icons/tutoriels.png",
                 },
             ]
         },
@@ -103,27 +93,27 @@ export default
                 {
                     title: "Je suis perdu",
                     slug: "je-suis-perdu",
-                    icon: "",
+                    icon: "page-icons/perdu.svg",
                 },
                 {
                     title: "Lexique du Gamedev",
                     slug: "lexique-du-gamedev",
-                    icon: "",
+                    icon: "page-icons/lexique.svg",
                 },
                 {
                     title: "Version Control",
                     slug: "version-control",
-                    icon: "",
+                    icon: "page-icons/version-control.svg",
                 },
                 {
                     title: "GDQuest",
                     slug: "gdquest",
-                    icon: "",
+                    icon: "page-icons/gdquest.svg",
                 },
                 {
                     title: "Assets",
                     slug: "assets",
-                    icon: "",
+                    icon: "page-icons/assets.svg",
                 },
             ]
         },

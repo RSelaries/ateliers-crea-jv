@@ -24,12 +24,14 @@
         flex-direction: row;
         justify-content: center;
         padding: 0 2rem;
+        flex: 1;
     }
 
     .navbar-wrapper {
         height: min-content;
         position: sticky;
-        top: 4rem;
+        /* margin-top: 2em; */
+        top: 4em;
     }
 
     article {
@@ -44,5 +46,6 @@
     article :global(h1) {
         font-family: Basteleur;
         font-weight: bold;
+        padding-bottom: 2rem;
     }
 </style>

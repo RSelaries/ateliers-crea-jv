@@ -18,6 +18,7 @@
         border-bottom: solid 1px var(--border-color);
         background-color: var(--panel-color);
         position: sticky;
+        z-index: 5;
         top: 0;
     }
     nav {
