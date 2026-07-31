@@ -1,5 +1,5 @@
 :root {
-    /* ## Colors ## */
+    /* Colors */
     --background-color: #0e0e0e;
     --panel-color: #151515;
     
@@ -13,6 +13,9 @@
     --redirection-color: #F2BF4A;
     --text-color: #f1f1f1;
     --text-color-muted: #898989;
+
+    /* Values */
+    --docs-article-size: 900px;
 }
 
 body {

@@ -17,6 +17,8 @@
         margin: 0;
         border-bottom: solid 1px var(--border-color);
         background-color: var(--panel-color);
+        position: sticky;
+        top: 0;
     }
     nav {
         padding: 5px 30px;

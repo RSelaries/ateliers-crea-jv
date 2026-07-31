@@ -1,6 +1,6 @@
 <footer>
     <div>
-        Site et Ateliers créés par Raphaël Selaries
+        Site et Ateliers créés par <a href="https://rselaries.github.io/portfolio">Raphaël Selaries</a>
     </div>
 </footer>
 
@@ -11,6 +11,15 @@
         margin: 0;
         border-top: solid 1px var(--border-color);
         background-color: var(--panel-color);
+    }
+
+    a {
+        color: var(--text-color);
+        text-decoration: dashed underline var(--text-color);
+    }
+    a:hover {
+        color: var(--highlight-color);
+        text-decoration: dashed underline var(--highlight-color);
     }
 
     footer > div {
