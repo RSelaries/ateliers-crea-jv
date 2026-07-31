@@ -13,7 +13,7 @@ export default defineConfig({
 				fallback: '404.html'
 			}),
 			paths: {
-				base: process.env.NODE_ENV === 'ateliers-crea-jv' ? '/ateliers-crea-jv' : ''
+				base: process.env.NODE_ENV === 'production' ? '/ateliers-crea-jv' : ''
 			}
 		})
 	]
