@@ -5,6 +5,7 @@
 
 <svelte:head>
 	<title>Ateliers création JV</title>
+    <meta http-equiv="refresh" content="0; URL={base}/introduction" />
 </svelte:head>
 
 <h1>Test in root</h1>
