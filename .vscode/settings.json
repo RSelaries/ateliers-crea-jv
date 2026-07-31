@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.svelte-kit": true,
+        "**/.github": true,
+        "**/node_modules": true,
+        "**/.npmrc": true,
+        "**/jsconfig.json": true,
+        "**/package.json": true,
+        "**/package-lock.json": true,
+        "**/vite.config.js": true,
+    }
+}
