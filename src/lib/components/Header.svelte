@@ -1,11 +1,18 @@
 <script>
+    import { afterNavigate } from '$app/navigation';
     import { base } from '$app/paths';
+
+    let { onTitlePage = false } = $props();
+
+    afterNavigate(() => {
+        onTitlePage = window.location.pathname === base + "/";
+    });
 </script>
 
 
 <header>
     <nav>
-        <a href="{base}/" class="site-title">Ateliers gamedev</a>
+        <a href="{base}/" class="site-title {onTitlePage ? 'on-title-page' : ''}">Ateliers gamedev</a>
         <a href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
     </nav>
 </header>
@@ -35,9 +42,13 @@
         padding-top: 2px;
         text-transform: uppercase;
     }
+    .on-title-page {
+        color: var(--titles-color);
+    }
     a {
         text-decoration: none;
         color: var(--body-text-color);
+        font: var(--nav-font-style);
     }
     a:hover {
         text-decoration: underline dashed;

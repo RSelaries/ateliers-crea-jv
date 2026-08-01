@@ -8,6 +8,7 @@
     import godotEditor from "$lib/assets/pages-medias/godot/installation/godot-editor-file.png";
     import godotEditorConsole from "$lib/assets/pages-medias/godot/installation/godot-editor-console-file.png";
     import projectManager1 from "$lib/assets/pages-medias/godot/installation/project-manager-1.png";
+    import projectManager2 from "$lib/assets/pages-medias/godot/installation/project-manager-2.png";
 </script>
 
 
@@ -68,4 +69,4 @@ par exemple: <span style="font-family: SpaceMono">"Documents\Godot\Editeur\Godot
 <p>
     On peut maintenant lancer l'éxécutable Godot, ce qui nous ouvre le <strong>Project Manager</strong>.
 </p>
-<ViewableImage src={projectManager1}></ViewableImage>
+<ViewableImage src={projectManager2}></ViewableImage>

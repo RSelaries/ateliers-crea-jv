@@ -1,14 +1,16 @@
 <script>
-    import DocsNavbar from '$lib/components/DocsNavbar.svelte';
-    import LoadingScreen from '$lib/components/LoadingScreen.svelte'
-    import PageSummary from '$lib/components/PageSummary.svelte';
-    import '$lib/css/article-style.css';
+    import DocsNavbar from "$lib/components/DocsNavbar.svelte";
+    import LoadingScreen from "$lib/components/LoadingScreen.svelte";
+    import PageSummary from "$lib/components/PageSummary.svelte";
+    import "$lib/css/article-style.css";
+    
+    import noise from "$lib/assets/global-medias/noise.png";
 
     let { children } = $props();
 </script>
 
 
-<div id="doc-page">
+<div id="doc-page" style="background-image: url({noise});">
     <div class="sidebar-wrapper">
         <DocsNavbar></DocsNavbar>
     </div>
@@ -30,6 +32,13 @@
         justify-content: center;
         padding: 0 2rem;
         flex: 1;
+
+        background-size: 200px;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
     }
 
     #doc-page .sidebar-wrapper {

@@ -133,9 +133,9 @@
         text-decoration: underline dashed;
     }
     li.page a:hover, li.page a.opened {
-        color: var(--highlight-color);
+        color: var(--nav-titles-color);
         .page-icon {
-            background-color: var(--highlight-color);
+            background-color: var(--nav-titles-color);
         }
     }
     li.page details summary::marker { content: ''; }

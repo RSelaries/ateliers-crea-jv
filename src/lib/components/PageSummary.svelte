@@ -2,7 +2,7 @@
     import { afterNavigate } from "$app/navigation"
     import { tick } from "svelte"
 
-    let headings = $state([])
+    let headings = $state()
     let activeId = $state(null)
 
     afterNavigate(() => {
@@ -80,7 +80,7 @@
         color: var(--text-color);
     }
     a.active {
-        color: var(--highlight-color);
+        color: var(--nav-titles-color);
     }
 
     @media (max-width: 1300px) {

@@ -1,6 +1,12 @@
 :root {
+    /* Palette */
+    --yellow: #F2BF4A;
+    --blue: #65BED4;
+    --white: #f1f1f1;
+    --pale-grey: #898989;
+
     /* Rdm colors */
-    --highlight-color: #65BED4;
+    --highlight-color: var(--blue);
     --highlight-color-transparent: #65BED44f;
     
     /* Background and border colors */
@@ -9,9 +15,13 @@
     --border-color: #2d2d2d;
     
     /* Text colors */
-    --redirection-color: #F2BF4A;
-    --text-color: #f1f1f1;
-    --text-color-muted: #898989;
+    --nav-titles-color: var(--yellow);
+    /* --nav-titles-color: var(--blue); */
+    --external-link-color: var(--blue);
+    --redirection-color: var(--yellow);
+    --text-color: var(--white);
+    --text-color-muted: var(--pale-grey);
+    --titles-color: var(--yellow);
 
     /* Values */
     --docs-article-size: 750px;
