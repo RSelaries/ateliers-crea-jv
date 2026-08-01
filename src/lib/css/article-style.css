@@ -39,10 +39,13 @@
 
     h1, h2, h3, h4, h5, h6 {
         font: var(--article-titles-font-style);
-        scroll-margin-top: 5rem;
+        scroll-margin-top: 7rem;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         color: var(--titles-color);
+    }
+    h4, h5, h6 {
+        color: var(--text-color);
     }
     
     h1 {

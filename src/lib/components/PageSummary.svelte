@@ -6,7 +6,8 @@
     let activeId = $state(null)
 
     afterNavigate(() => {
-        headings = document.getElementById("docs-article").querySelectorAll("h1, h2, h3");
+        headings = document.getElementById("docs-article").querySelectorAll("h1, h2, h3, h4, h5, h6");
+        headings = Array.from(headings).filter((heading) => {return heading.id != ''});
         updateActiveHeading();
     });
 
@@ -68,8 +69,8 @@
         margin: 0;
         width: var(--side-bars-size);
         margin-left: 2rem;
-        display: flex;
         flex-direction: column;
+        display: var(--page-summary-display, flex);
     }
     
     a {
@@ -81,12 +82,6 @@
     }
     a.active {
         color: var(--nav-titles-color);
-    }
-
-    @media (max-width: 1300px) {
-        nav {
-            display: none;
-        }
     }
     
     :global(.page-summary h1) {

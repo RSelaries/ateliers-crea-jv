@@ -11,7 +11,7 @@
 
 
 <div id="doc-page" style="background-image: url({noise});">
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper docs-navbar">
         <DocsNavbar></DocsNavbar>
     </div>
     
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 0 2rem;
+        padding: 0 var(--article-margin, 2rem);
         flex: 1;
 
         background-size: 200px;
@@ -50,7 +50,7 @@
     #docs-article {
         max-width: var(--docs-article-size);
         flex: 1;
-        margin: 2rem 0;
+        margin: var(--article-margin, 2rem) 0;
         padding: 2rem;
         background-color: var(--panel-color);
         border: 1px solid var(--border-color);

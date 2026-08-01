@@ -52,11 +52,11 @@
 </p>
 
 <section class="subsection">
-    <enhanced:img src={godotEditor} alt=""/>
+    <img src="{godotEditor}" alt=""/>
     <p>
         L'éditeur Godot classique. <small>(Contrairement à Unity ou UnrealEngine, Godot est très léger.)</small>
     </p>
-    <enhanced:img src={godotEditorConsole} alt=""/>
+    <img src="{godotEditorConsole}" alt=""/>
     <p>
         Lance le premier exécutable et ouvre une console en arrière plan.
     </p>

@@ -18,6 +18,6 @@
     }
 
     footer > div {
-        padding: 10px 60px;
+        padding: 10px calc(2rem + var(--article-margin));
     }
 </style>

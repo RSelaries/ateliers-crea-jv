@@ -69,6 +69,8 @@
         margin: 0;
         width: var(--side-bars-size);
         margin-right: 2rem;
+        display: var(--docs-navbar-main-display);
+        flex-direction: column;
     }
 
 
@@ -119,7 +121,7 @@
         height: 16px;
         mask-size: 16px 16px;
         mask-position: center center;
-        mask-repeat: none;
+        mask-repeat: no-repeat;
         background-color: var(--text-color);
     }
     li.page a {

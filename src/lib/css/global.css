@@ -47,3 +47,38 @@ body {
     margin: 0;
 }
 
+/* Full size */
+@media (min-width: 1300px) {
+    :root {
+        --page-summary-display: flex;
+        --docs-navbar-main-display: flex;
+        --article-margin: 2rem;
+    }
+}
+
+/* No page summary */
+@media (min-width: 1000px) and (max-width: 1300px) {
+    :root {
+        --docs-navbar-main-display: flex;
+        --page-summary-display: none;
+        --article-margin: 2rem;
+    }
+}
+
+/* No main navbar */
+@media (min-width: 700px) and (max-width: 1000px) {
+    :root {
+        --docs-navbar-main-display: none;
+        --page-summary-display: none;
+        --article-margin: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    :root {
+        --docs-navbar-main-display: none;
+        --page-summary-display: none;
+        --article-margin: 0px;
+    }
+}
