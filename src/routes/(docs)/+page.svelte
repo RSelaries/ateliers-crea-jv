@@ -21,8 +21,6 @@
     le moteur de jeu <ExternalLink href="https://godotengine.org/fr/">Godot</ExternalLink>.
 </p>
 
-<!-- <p style="text-align: center;"><b>***</b></p> -->
-
 <h2 id="commencer-a-creer">Je veux créer un jeu !</h2>
 <p>
     Vous pouvez commencer dès maintenant en suivant le premier atelier:

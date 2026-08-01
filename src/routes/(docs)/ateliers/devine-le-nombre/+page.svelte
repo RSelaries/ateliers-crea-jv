@@ -8,7 +8,7 @@
 </svelte:head>
 
 
-<h1 id="devine-le-nombre">Devine le nombre</h1>
+<h1 id="devine-le-nombre"><span style="color: var(--text-color-muted); font-size: 0.8em;">Atelier 1 -</span> <span class="title">Devine le nombre</span></h1>
 <p>
     Dans cet atelier, nous allons découvrir l'interface de Godot et créer notre premier jeu.
 </p>

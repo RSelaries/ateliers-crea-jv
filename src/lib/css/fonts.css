@@ -8,12 +8,38 @@
 @font-face {
     font-family: Basteleur;
     font-weight: normal;
-    src: url(/fonts/Basteleur-Moonlight.woff2);
+    src: url(/fonts/basteleur/Basteleur-Moonlight.woff2);
 }
 @font-face {
     font-family: Basteleur;
     font-weight: bold;
-    src: url(/fonts/Basteleur-Bold.woff2);
+    src: url(/fonts/basteleur/Basteleur-Bold.woff2);
+}
+
+/* SpaceMono */
+@font-face {
+    font-family: SpaceMono;
+    src: url(/fonts/space-mono/SpaceMono-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: SpaceMono;
+    src: url(/fonts/space-mono/SpaceMono-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: SpaceMono;
+    src: url(/fonts/space-mono/SpaceMono-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: SpaceMono;
+    src: url(/fonts/space-mono/SpaceMono-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* Prompt */

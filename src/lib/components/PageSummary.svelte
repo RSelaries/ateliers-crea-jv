@@ -6,13 +6,13 @@
     let activeId = $state(null)
 
     afterNavigate(() => {
-        headings = document.getElementById("docs-article").querySelectorAll("h1, h2, h3, h4, h5, h6");
+        headings = document.getElementById("docs-article").querySelectorAll("h1, h2, h3");
+        updateActiveHeading();
     });
 
     function updateActiveHeading() {
-        const offset = 50;
+        const offset = 200;
         let current = null;
-
         for (const heading of headings) {
             if (heading.getBoundingClientRect().top - offset <= 0) {
                 current = heading;
@@ -20,7 +20,6 @@
                 break;
             }
         }
-
         activeId = current ? (current.id != '' ? current.id : null) : headings[0]?.id ?? null;
     }
 
@@ -40,13 +39,24 @@
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
     })
+
+    function getHeadingTitle(heading) {
+        var title = heading.getElementsByClassName('title')[0];
+        if (title) {
+            let nodeType = heading.nodeName.toLowerCase();
+            let opening = "<" + nodeType + ">";
+            let closing = "</" + nodeType + ">";
+            return opening + title.outerHTML + closing;
+        }
+        return heading.outerHTML;
+    }
 </script>
 
 
 <nav class="page-summary">
     {#each headings as heading}
     <a href="#{heading.id}" class="{heading.id === activeId ? 'active' : ''}">
-        {@html heading.outerHTML}
+        {@html getHeadingTitle(heading)}
     </a>
     {/each}
 </nav>
@@ -92,7 +102,7 @@
         margin: 0;
         padding: 0;
 
-        background-position: center left;
+        background-position: top 2px left;
         background-repeat: no-repeat;
     }
     :global(.page-summary h3) {

@@ -1,14 +1,35 @@
 #docs-article {
     p {
+        margin-top: 0;
         font-weight: 300;
+        color: rgba(from var(--text-color) r g b, 0.8);
     }
     
     a {
         font-weight: 600;
     }
+
+    img {
+        border: 1px solid var(--border-color);
+        margin-top: 0.5em;
+    }
+
+    small {
+        color: var(--text-color-muted);
+        font-size: 0.8em;
+    }
+
+    section.subsection {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
     
     b {
         font-weight: 500;
+    }
+    strong {
+        font-weight: 600;
+        /* color: var(--highlight-color); */
     }
 
     i {
@@ -16,19 +37,21 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        scroll-margin-top: 5rem;
-    }
-
-    h1 {
         font-family: Basteleur;
-        font-weight: bold;
-        padding-bottom: 2rem;
-    }
-    
-    h2 {
-        font-family: Lineal;
-        text-decoration: underline;
+        scroll-margin-top: 5rem;
+        font-weight: normal;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
+    }
+    
+    h1 {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        text-decoration: none;
+    }
+
+    h2 {
+        text-decoration: underline;
     }
 }
