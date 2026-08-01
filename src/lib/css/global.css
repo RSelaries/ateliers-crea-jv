@@ -35,11 +35,10 @@
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
-    height: 100%;
     font-family: prompt;
     font-weight: 300;
     font-size: 16px;
