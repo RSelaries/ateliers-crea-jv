@@ -34,7 +34,12 @@
     --text-font-style: 300 16px Prompt;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     font-family: prompt;
     font-weight: 300;
     font-size: 16px;
