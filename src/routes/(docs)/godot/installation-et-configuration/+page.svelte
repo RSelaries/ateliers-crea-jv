@@ -1,4 +1,6 @@
 <script>
+    import ViewableImage from "$lib/components/ViewableImage.svelte";
+
     import ExternalLink from "$lib/components/ExternalLink.svelte";
     import Link from "$lib/components/Link.svelte";
     import GodotInstalBtn from "./GodotInstalBtn.svelte";
@@ -59,3 +61,9 @@
 
 L'éxécutable le plus important est le premier, c'est l'éditeur Godot. Vous pouvez le ranger dans un dossier,
 par exemple: <span style="font-family: SpaceMono">"Documents\Godot\Editeur\Godot_v4.7-stable_win64.exe"</span>.
+
+<h2 id="project-manager">Project Manager</h2>
+<p>
+    On peut maintenant lancer l'éxécutable Godot, ce qui nous ouvre le <strong>Project Manager</strong>.
+</p>
+<ViewableImage src=""></ViewableImage>

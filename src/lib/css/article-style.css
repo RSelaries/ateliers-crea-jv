@@ -30,6 +30,7 @@
     strong {
         font-weight: 600;
         /* color: var(--highlight-color); */
+        font-style: italic;
     }
 
     i {
