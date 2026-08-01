@@ -50,8 +50,11 @@ body {
 /* Full size */
 @media (min-width: 1300px) {
     :root {
-        --page-summary-display: flex;
         --docs-navbar-main-display: flex;
+        --docs-navbar-burger-display: none;
+        --page-summary-display: flex;
+        --header-titles-display: flex;
+        --header-titles-burger-display: none;
         --article-margin: 2rem;
     }
 }
@@ -60,7 +63,10 @@ body {
 @media (min-width: 1000px) and (max-width: 1300px) {
     :root {
         --docs-navbar-main-display: flex;
+        --docs-navbar-burger-display: none;
         --page-summary-display: none;
+        --header-titles-display: flex;
+        --header-titles-burger-display: none;
         --article-margin: 2rem;
     }
 }
@@ -69,7 +75,10 @@ body {
 @media (min-width: 700px) and (max-width: 1000px) {
     :root {
         --docs-navbar-main-display: none;
+        --docs-navbar-burger-display: flex;
         --page-summary-display: none;
+        --header-titles-display: flex;
+        --header-titles-burger-display: none;
         --article-margin: 2rem;
     }
 }
@@ -78,7 +87,10 @@ body {
 @media (max-width: 700px) {
     :root {
         --docs-navbar-main-display: none;
+        --docs-navbar-burger-display: flex;
+        --header-titles-display: none;
         --page-summary-display: none;
+        --header-titles-burger-display: flex;
         --article-margin: 0px;
     }
 }

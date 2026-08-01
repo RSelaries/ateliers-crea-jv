@@ -45,6 +45,7 @@
         height: min-content;
         position: sticky;
         top: 5em;
+        max-width: var(--side-bars-size);
     }
 
     #docs-article {

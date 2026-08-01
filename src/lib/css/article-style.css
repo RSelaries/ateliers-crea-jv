@@ -43,6 +43,10 @@
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         color: var(--titles-color);
+
+        .title {
+            display: inline-block;
+        }
     }
     h4, h5, h6 {
         color: var(--text-color);

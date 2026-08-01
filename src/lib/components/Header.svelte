@@ -14,10 +14,10 @@
 <header>
     <nav>
         <div class="container">
-            <BurgerMenu {onTitlePage}></BurgerMenu>
-            <a href="{base}/" class="site-title {onTitlePage ? 'on-title-page' : ''}">Ateliers gamedev</a>
+            <BurgerMenu></BurgerMenu>
+            <a href="{base}/" class="site-title {onTitlePage ? 'on-title-page' : ''}" style="display: var(--header-titles-display);">Ateliers gamedev</a>
         </div>
-        <a href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
+        <a style="display: var(--header-titles-display);" href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
     </nav>
 </header>
 
@@ -40,7 +40,7 @@
         align-items: center;
         box-shadow: 0px 0px 15px #0007;
     }
-    .site-title {
+    header :global(.site-title) {
         font: var(--title-font-style);
         font-size: 20px;
         padding-top: 2px;
@@ -49,12 +49,12 @@
     .on-title-page {
         color: var(--titles-color);
     }
-    a {
+    header :global(a) {
         text-decoration: none;
         color: var(--body-text-color);
         font: var(--nav-font-style);
     }
-    a:hover {
+    header :global(a):hover {
         text-decoration: underline dashed;
     }
     .container {

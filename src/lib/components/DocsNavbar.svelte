@@ -2,15 +2,12 @@
     import { afterNavigate } from '$app/navigation';
     import { base } from "$app/paths";
     import { onMount } from "svelte";
-    
     import pages from "$lib/pages";
 
-
-    afterNavigate(highlightOpenedPage);
-
-
+    let { burgerMenu = false } = $props();
     let openedPage = $state("");
     
+    afterNavigate(highlightOpenedPage);
 
     function highlightOpenedPage() {
         var path = location.pathname;
@@ -23,7 +20,7 @@
 </script>
 
 
-<nav>
+<nav style={burgerMenu ? "display: flex;" : ''}>
     <!-- Categories -->
     {#each pages.docs as category}
     <details class="category" open>
@@ -67,7 +64,6 @@
     nav {
         font: var(--nav-font-style);
         margin: 0;
-        width: var(--side-bars-size);
         margin-right: 2rem;
         display: var(--docs-navbar-main-display);
         flex-direction: column;
