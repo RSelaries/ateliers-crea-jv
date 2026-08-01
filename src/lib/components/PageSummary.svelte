@@ -64,8 +64,8 @@
 
 <style>
     nav {
+        font: var(--nav-font-style);
         margin: 0;
-        font-family: Lineal;
         width: var(--side-bars-size);
         margin-left: 2rem;
         display: flex;
@@ -90,9 +90,7 @@
     }
     
     :global(.page-summary h1) {
-        font-family: Basteleur;
-        font-weight: bold;
-        font-size: 20px;
+        font: var(--title-font-style);
         margin-top: 0;
     }
 

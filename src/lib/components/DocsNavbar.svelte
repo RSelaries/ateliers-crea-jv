@@ -65,8 +65,8 @@
 
 <style>
     nav {
+        font: var(--nav-font-style);
         margin: 0;
-        font-family: Lineal;
         width: var(--side-bars-size);
         margin-right: 2rem;
     }
@@ -79,9 +79,7 @@
     details.category > summary::marker { content: none; }
     details.category > summary:hover { cursor: pointer; }
     details.category > summary {
-        font-family: Basteleur;
-        font-weight: bold;
-        font-weight: 900;
+        font: var(--title-font-style);
         font-size: 20px;
         padding-left: 28px;
         padding-top: 3px;

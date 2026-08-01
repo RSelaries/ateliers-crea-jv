@@ -4,6 +4,12 @@
     src: url(/fonts/LinealVF.woff2);
 }
 
+/* LeMurmure */
+@font-face {
+    font-family: LeMurmure;
+    src: url(/fonts/LeMurmure.woff2);
+}
+
 /* Basteleur */
 @font-face {
     font-family: Basteleur;

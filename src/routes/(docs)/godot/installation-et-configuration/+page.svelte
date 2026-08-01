@@ -1,11 +1,13 @@
 <script>
     import ViewableImage from "$lib/components/ViewableImage.svelte";
-
     import ExternalLink from "$lib/components/ExternalLink.svelte";
     import Link from "$lib/components/Link.svelte";
     import GodotInstalBtn from "./GodotInstalBtn.svelte";
+
+    // Assets
     import godotEditor from "$lib/assets/pages-medias/godot/installation/godot-editor-file.png";
     import godotEditorConsole from "$lib/assets/pages-medias/godot/installation/godot-editor-console-file.png";
+    import projectManager1 from "$lib/assets/pages-medias/godot/installation/project-manager-1.png";
 </script>
 
 
@@ -49,11 +51,11 @@
 </p>
 
 <section class="subsection">
-    <img src={godotEditor} alt="">
+    <enhanced:img src={godotEditor} alt=""/>
     <p>
         L'éditeur Godot classique. <small>(Contrairement à Unity ou UnrealEngine, Godot est très léger.)</small>
     </p>
-    <img src={godotEditorConsole} alt="">
+    <enhanced:img src={godotEditorConsole} alt=""/>
     <p>
         Lance le premier exécutable et ouvre une console en arrière plan.
     </p>
@@ -66,4 +68,4 @@ par exemple: <span style="font-family: SpaceMono">"Documents\Godot\Editeur\Godot
 <p>
     On peut maintenant lancer l'éxécutable Godot, ce qui nous ouvre le <strong>Project Manager</strong>.
 </p>
-<ViewableImage src=""></ViewableImage>
+<ViewableImage src={projectManager1}></ViewableImage>

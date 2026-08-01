@@ -16,6 +16,12 @@
     /* Values */
     --docs-article-size: 750px;
     --side-bars-size: 250px;
+
+    /* Font styles */
+    --title-font-style: bold 20px Basteleur;
+    --article-titles-font-style: normal 20px Basteleur;
+    --nav-font-style: normal 16px Lineal;
+    --text-font-style: 300 16px Prompt;
 }
 
 body {

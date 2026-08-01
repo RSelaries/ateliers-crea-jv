@@ -1,8 +1,7 @@
 #docs-article {
     p {
         margin-top: 0;
-        font-weight: 300;
-        color: rgba(from var(--text-color) r g b, 0.8);
+        font: var(--text-font-style);
     }
     
     a {
@@ -10,6 +9,7 @@
     }
 
     img {
+        max-width: 100%;
         border: 1px solid var(--border-color);
         margin-top: 0.5em;
     }
@@ -38,14 +38,15 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: Basteleur;
+        font: var(--article-titles-font-style);
         scroll-margin-top: 5rem;
-        font-weight: normal;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
     }
     
     h1 {
+        font: var(--title-font-style);
+        font-size: 36px;
         font-weight: bold;
         margin-top: 0;
         margin-bottom: 2rem;
@@ -54,5 +55,10 @@
 
     h2 {
         text-decoration: underline;
+        font-size: 30px;
     }
+    h3 { font-size: 24px; }
+    h4 { font-size: 20px; }
+    h5 { font-size: 18px; }
+    h6 { font-size: 16px; }
 }

@@ -1,6 +1,5 @@
 <script>
-    import ExternalLink from "./ExternalLink.svelte"
-
+    import ExternalLink from "./ExternalLink.svelte";
 </script>
 <footer>
     <div>
@@ -12,7 +11,7 @@
 <style>
     footer {
         font-family: Lineal;
-        width: 100vw;
+        width: 100%;
         margin: 0;
         border-top: solid 1px var(--border-color);
         background-color: var(--panel-color);

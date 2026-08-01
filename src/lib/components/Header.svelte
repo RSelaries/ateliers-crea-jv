@@ -13,7 +13,7 @@
 
 <style>
     header {
-        width: 100vw;
+        width: 100%;
         padding: 0;
         margin: 0;
         border-bottom: solid 1px var(--border-color);
@@ -30,8 +30,7 @@
         box-shadow: 0px 0px 15px #0007;
     }
     .site-title {
-        font-family: Basteleur;
-        font-weight: bold;
+        font: var(--title-font-style);
         font-size: 20px;
         padding-top: 2px;
         text-transform: uppercase;
@@ -43,9 +42,4 @@
     a:hover {
         text-decoration: underline dashed;
     }
-    /* nav > div {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    } */
 </style>
