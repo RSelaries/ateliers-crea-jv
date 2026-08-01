@@ -1,6 +1,25 @@
 <script>
-    import pages from "$lib/pages";
+    import { afterNavigate } from '$app/navigation';
     import { base } from "$app/paths";
+    import { onMount } from "svelte";
+    
+    import pages from "$lib/pages";
+
+
+    afterNavigate(highlightOpenedPage);
+
+
+    let openedPage = $state("");
+    
+
+    function highlightOpenedPage() {
+        var path = location.pathname;
+        var pathClassName = path.replaceAll("/", "-");
+        if (pathClassName.startsWith("-")) {
+            pathClassName = pathClassName.substring(1);
+        }
+        openedPage = pathClassName;
+    }
 </script>
 
 
@@ -16,7 +35,7 @@
                 {#if page.subpages}
                 <details open>
                     <summary>
-                        <a href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
+                        <a class="{category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                             <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                         </a>
                     </summary>
@@ -24,7 +43,7 @@
                         <!-- Subpages (if there are any) -->
                         {#each page.subpages as subpage}
                         <li>
-                            <a class="subpage" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}/{subpage.slug}">
+                            <a class="subpage {category.slug}{page.slug ? '-' + page.slug : ''}-{subpage.slug}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}/{subpage.slug}">
                                 <div style="mask-image: url({base}/{subpage.icon});" class="page-icon"></div>{subpage.title}
                             </a>
                         </li>
@@ -32,7 +51,7 @@
                     </ol>
                 </details>
                 {:else}
-                <a href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
+                <a class="{category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                     <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                 </a>
                 {/if}
@@ -49,6 +68,7 @@
         margin: 0;
         font-family: Lineal;
         width: 250px;
+        margin-right: 2rem;
     }
 
 
@@ -113,10 +133,12 @@
     }
     li.page a:hover {
         text-decoration: underline dashed;
-        color: var(--highlight-color);
     }
-    li.page a:hover .page-icon {
-        background-color: var(--highlight-color);
+    li.page a:hover, li.page a.opened {
+        color: var(--highlight-color);
+        .page-icon {
+            background-color: var(--highlight-color);
+        }
     }
     li.page details summary::marker { content: ''; }
 </style>

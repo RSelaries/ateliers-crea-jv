@@ -1,12 +1,15 @@
 <script>
     import DocsNavbar from '$lib/components/DocsNavbar.svelte';
-    import PageSummary from '$lib/components/PageSummary.svelte'
+    import LoadingScreen from '$lib/components/LoadingScreen.svelte'
+    import PageSummary from '$lib/components/PageSummary.svelte';
+    import '$lib/css/article-style.css';
 
     let { children } = $props();
 </script>
 
+
 <div id="doc-page">
-    <div class="navbar-wrapper">
+    <div class="sidebar-wrapper">
         <DocsNavbar></DocsNavbar>
     </div>
     
@@ -14,7 +17,9 @@
         {@render children()}
     </article>
 
-    <PageSummary></PageSummary>
+    <div class="sidebar-wrapper">
+        <PageSummary></PageSummary>
+    </div>
 </div>
 
 
@@ -27,25 +32,18 @@
         flex: 1;
     }
 
-    .navbar-wrapper {
+    #doc-page .sidebar-wrapper {
         height: min-content;
         position: sticky;
-        /* margin-top: 2em; */
-        top: 4em;
+        top: 5em;
     }
 
-    article {
-        margin: 2rem;
-        padding: 2rem;
-        flex: 1;
+    #docs-article {
         max-width: var(--docs-article-size);
+        flex: 1;
+        margin: 2rem 0;
+        padding: 2rem;
         background-color: var(--panel-color);
         border: 1px solid var(--border-color);
-    }
-
-    article :global(h1) {
-        font-family: Basteleur;
-        font-weight: bold;
-        padding-bottom: 2rem;
     }
 </style>

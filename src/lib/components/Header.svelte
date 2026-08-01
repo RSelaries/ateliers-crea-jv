@@ -1,11 +1,12 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
+
 <header>
     <nav>
-        <div>
-            <a href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
-        </div>
-        <div>
-            <a id="github-issues" href="https://github.com/RSelaries/ateliers-gamejam/issues/new" target="_blank">Suggérer un changement</a>
-        </div>
+        <a href="{base}/" class="site-title">Ateliers gamedev</a>
+        <a href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
     </nav>
 </header>
 
@@ -22,26 +23,29 @@
         top: 0;
     }
     nav {
-        padding: 5px 30px;
+        padding: 10px 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         box-shadow: 0px 0px 15px #0007;
     }
-    .logo {
-        cursor: pointer;
-        font-weight: 500;
-    }
-    .logo:hover {
-        color: var(--highlight-color);
+    .site-title {
+        font-family: Basteleur;
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 2px;
+        text-transform: uppercase;
     }
     a {
         text-decoration: none;
         color: var(--body-text-color);
     }
-    nav > div {
+    a:hover {
+        text-decoration: underline dashed;
+    }
+    /* nav > div {
         display: flex;
         align-items: center;
         gap: 15px;
-    }
+    } */
 </style>
