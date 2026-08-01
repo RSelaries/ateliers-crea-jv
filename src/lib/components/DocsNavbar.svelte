@@ -67,7 +67,7 @@
     nav {
         margin: 0;
         font-family: Lineal;
-        width: 250px;
+        width: var(--side-bars-size);
         margin-right: 2rem;
     }
 

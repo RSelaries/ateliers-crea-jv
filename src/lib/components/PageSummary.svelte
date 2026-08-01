@@ -56,7 +56,7 @@
     nav {
         margin: 0;
         font-family: Lineal;
-        width: 250px;
+        width: var(--side-bars-size);
         margin-left: 2rem;
         display: flex;
         flex-direction: column;
@@ -71,6 +71,12 @@
     }
     a.active {
         color: var(--highlight-color);
+    }
+
+    @media (max-width: 1300px) {
+        nav {
+            display: none;
+        }
     }
     
     :global(.page-summary h1) {

@@ -5,7 +5,7 @@
 </script>
 
 
-<a {href}>{@render children()}</a>
+<a href="{base}/{href}">{@render children()}</a>
 
 
 <style>

@@ -16,17 +16,15 @@ export default
             title: "Ateliers",
             slug: "ateliers",
             pages: [
-                {
-                    title: "Découverte",
-                    slug: "",
-                    icon: "page-icons/decouverte.svg",
-                },
+                // {
+                //     title: "Découverte",
+                //     slug: "",
+                //     icon: "page-icons/decouverte.svg",
+                // },
                 {
                     title: "Devine le nombre",
                     slug: "devine-le-nombre",
                     icon: "page-icons/devine-nombre.svg",
-                    subpages: [
-                    ],
                 },
                 // {
                 //     title: "Jeu de plateforme",
@@ -54,11 +52,11 @@ export default
                 //     slug: "",
                 //     icon: "page-icons/godot.svg",
                 // },
-                // {
-                //     title: "Pour commencer",
-                //     slug: "installation-et-configuration",
-                //     icon: "page-icons/installation-et-configuration.svg",
-                // },
+                {
+                    title: "Pour commencer",
+                    slug: "installation-et-configuration",
+                    icon: "page-icons/installation-et-configuration.svg",
+                },
                 // {
                 //     title: "L'Interface de Godot",
                 //     slug: "interface",
