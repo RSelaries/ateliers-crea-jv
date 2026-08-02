@@ -25,21 +25,24 @@
 
 <style>
     .carousel-backdrop {
+        --side-padding: 4rem;
+        --top-padding: 6rem;
         cursor: zoom-out;
         border: none;
         position: fixed;
         top: 0;
         left: 0;
-        width: calc(100% - 8rem);
-        height: calc(100% - 10rem);
+        padding: var(--side-padding);
+        padding-top: var(--top-padding);
+        width: calc(100% - calc(var(--side-padding) * 2));
+        height: calc(100% - calc(var(--side-padding) + var(--top-padding)));
         background-color: #0004;
         backdrop-filter: blur(2px);
         z-index: 2;
-        padding: 4rem;
-        padding-top: 6rem;
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 1rem;
     }
 
     .carousel-btn {
@@ -52,6 +55,7 @@
         background-position: center center;
         background-size: contain;
         cursor: pointer;
+        aspect-ratio: 1;
     }
     .carousel-btn:hover {
         transform: scale(1.1);
@@ -59,15 +63,31 @@
     .carousel-btn.previous {
         background-image: url("$lib/assets/icons/previous.svg");
         left: 1rem;
+        grid-area: prev;
     }
     .carousel-btn.next {
         background-image: url("$lib/assets/icons/next.svg");
         right: 1rem;
+        grid-area: next;
     }
 
     img {
         object-fit: contain;
         width: 100%;
         height: 100%;
+        grid-area: carousel;
+    }
+
+    @media (orientation: portrait) {
+        .carousel-backdrop {
+            --side-padding: 2rem;
+            display: grid;
+            grid-template-areas:
+            "carousel carousel"
+            "prev next";
+        }
+        .carousel-btn.next {
+            justify-self: end;
+        }
     }
 </style>
