@@ -13,10 +13,12 @@
     --background-color: #0e0e0e;
     --panel-color: #151515;
     --border-color: #2d2d2d;
+    --note-panel-color: var(--blue);
+    --atelier-details-color: var(--blue);
+    --atelier-details-panel-color: rgb(from var(--blue) r g b / 0.2);
     
     /* Text colors */
     --nav-titles-color: var(--yellow);
-    /* --nav-titles-color: var(--blue); */
     --external-link-color: var(--blue);
     --redirection-color: var(--yellow);
     --text-color: var(--white);
@@ -32,6 +34,7 @@
     --article-titles-font-style: normal 20px Basteleur;
     --nav-font-style: normal 16px Lineal;
     --text-font-style: 300 16px Prompt;
+    --note-font-style: normal 16px Lineal;
 }
 
 html {

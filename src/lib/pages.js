@@ -14,7 +14,7 @@ export default
         // },
         {
             title: "Ateliers",
-            slug: "ateliers",
+            slug: "atelier",
             pages: [
                 // {
                 //     title: "Découverte",
@@ -57,6 +57,11 @@ export default
                     slug: "installation-et-configuration",
                     icon: "page-icons/installation-et-configuration.svg",
                 },
+                {
+                    title: "GDQuest",
+                    slug: "gdquest",
+                    icon: "page-icons/gdquest.svg",
+                },
                 // {
                 //     title: "L'Interface de Godot",
                 //     slug: "interface",
@@ -82,16 +87,16 @@ export default
                 //     slug: "plugins",
                 //     icon: "page-icons/plugins.svg",
                 // },
-                // {
-                //     title: "Tutoriels",
-                //     slug: "tutoriels",
-                //     icon: "page-icons/tutoriels.png",
-                // },
+                {
+                    title: "Tutoriels",
+                    slug: "tutoriels",
+                    icon: "page-icons/tutoriels.png",
+                },
             ]
         },
         {
-            title: "Ressources Suplémentaires",
-            slug: "ressources-suplementaires",
+            title: "Ressources Supplémentaires",
+            slug: "ressources-supplementaires",
             pages: [
                 // {
                 //     title: "Je suis perdu",
@@ -107,11 +112,6 @@ export default
                 //     title: "Version Control",
                 //     slug: "version-control",
                 //     icon: "page-icons/version-control.svg",
-                // },
-                // {
-                //     title: "GDQuest",
-                //     slug: "gdquest",
-                //     icon: "page-icons/gdquest.svg",
                 // },
                 // {
                 //     title: "Assets",
