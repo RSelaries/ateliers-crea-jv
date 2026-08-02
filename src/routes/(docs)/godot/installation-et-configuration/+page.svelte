@@ -178,7 +178,7 @@ par exemple: <span style="font-family: SpaceMono">"Documents\Godot\Editeur\Godot
 
 <h2 id="apprendre-godot">Apprendre godot</h2>
 <p>
-    Si vous n'avez jamais codé, je vous conseille d'utiliser l'app <Link href="godot/gdquest">GDQuest</Link>.
+    Si vous n'avez jamais codé, je vous conseille d'utiliser l'app <Link href="godot/gdquest">Apprendre GDScript de Zéro</Link> de GDQuest.
     C'est un projet <strong>open source</strong> qui vous introduit petit à petit aux <strong>variables</strong>,
     <strong>fonctions</strong>, <strong>conditions</strong> <small>(etc.)</small> de GDScript. Cela pourrait même
     vous aider à apprender Python.

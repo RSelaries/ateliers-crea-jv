@@ -20,14 +20,14 @@
     /* Text colors */
     --nav-titles-color: var(--yellow);
     --external-link-color: var(--blue);
-    --redirection-color: var(--yellow);
+    --redirection-color: var(--blue);
     --text-color: var(--white);
     --text-color-muted: var(--pale-grey);
     --titles-color: var(--yellow);
 
     /* Values */
     --docs-article-size: 750px;
-    --side-bars-size: 250px;
+    --side-bars-size: 260px;
 
     /* Font styles */
     --title-font-style: bold 20px Basteleur;
@@ -35,6 +35,7 @@
     --nav-font-style: normal 16px Lineal;
     --text-font-style: 300 16px Prompt;
     --note-font-style: normal 16px Lineal;
+    --code-font-style: normal 16px SpaceMono;
 }
 
 html {

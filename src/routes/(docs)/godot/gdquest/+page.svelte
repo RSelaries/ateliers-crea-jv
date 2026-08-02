@@ -5,7 +5,7 @@
 </script>
 
 
-<h1 id="pour-commencer"><small>Godot -</small> <span class="title">GDQuest</span></h1>
+<h1 id="pour-commencer"><small>Godot -</small> <span class="title">Aprendre GDScript de Zéro</span></h1>
 
 <Note>
     Vous pouvez passer l'app en Français. Dans "options" > "language".

@@ -113,7 +113,7 @@
     }
     li.page .page-icon {
         margin-right: 6px;
-        width: 16px;
+        min-width: 16px;
         height: 16px;
         mask-size: 16px 16px;
         mask-position: center center;
@@ -125,7 +125,6 @@
         text-decoration: none;
         display: flex;
         flex-direction: row;
-        white-space: nowrap;
     }
     li.page a:hover {
         text-decoration: underline dashed;
