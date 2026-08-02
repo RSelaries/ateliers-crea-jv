@@ -5,11 +5,13 @@
     import "$lib/css/article-style.css";
     
     import noise from "$lib/assets/global-medias/noise.png";
+    import ImageCarousel from "$lib/components/ImageCarousel.svelte"
 
     let { children } = $props();
 </script>
 
 
+<ImageCarousel></ImageCarousel>
 <div id="doc-page" style="background-image: url({noise});">
     <div class="sidebar-wrapper docs-navbar">
         <DocsNavbar></DocsNavbar>

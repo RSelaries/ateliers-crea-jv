@@ -13,6 +13,7 @@
 	let { children } = $props();
 </script>
 
+
 <svelte:head>
 	<link rel="icon" href={favicon}/>
 </svelte:head>
@@ -33,10 +34,12 @@
 		display: flex;
 		flex-direction: column;
 		scrollbar-gutter: stable;
+		flex: 1;
 	}
 
 	main {
 		flex: 1;
 		display: flex;
+		flex-direction: column;
 	}
 </style>

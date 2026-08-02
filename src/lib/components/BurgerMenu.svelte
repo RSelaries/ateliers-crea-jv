@@ -9,9 +9,10 @@
 
     $effect(() => {
         if (opened) {
-            document.querySelector("body").style.overflow = "hidden";
+            document.querySelector("body").className += "burger-menu-opened";
         } else {
-            document.querySelector("body").style.overflow = "auto";
+            let className = document.querySelector("body").className;
+            document.querySelector("body").className = className.replace('burger-menu-opened', '');
         }
 
         window.addEventListener("resize", onResize);
