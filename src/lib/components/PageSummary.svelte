@@ -6,7 +6,7 @@
     let activeId = $state(null)
 
     afterNavigate(() => {
-        headings = document.getElementById("docs-article").querySelectorAll("h1, h2, h3, h4, h5, h6");
+        headings = document.querySelector(".docs-article").querySelectorAll("h1, h2, h3, h4, h5, h6");
         headings = Array.from(headings).filter((heading) => {return heading.id != ''});
         updateActiveHeading();
     });

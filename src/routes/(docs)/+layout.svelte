@@ -16,7 +16,7 @@
         <DocsNavbar></DocsNavbar>
     </div>
     
-    <article id="docs-article">
+    <article class="docs-article">
         {@render children()}
     </article>
 
@@ -45,7 +45,7 @@
         max-width: var(--side-bars-size);
     }
 
-    #docs-article {
+    .docs-article {
         max-width: var(--docs-article-size);
         flex: 1;
         margin: var(--article-margin, 2rem) 0;
