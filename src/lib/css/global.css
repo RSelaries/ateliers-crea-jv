@@ -4,6 +4,7 @@
     --blue: #65BED4;
     --white: #f1f1f1;
     --pale-grey: #898989;
+    --red: #d68f8f;
 
     /* Rdm colors */
     --highlight-color: var(--blue);
@@ -12,6 +13,7 @@
     /* Background and border colors */
     --background-color: #0e0e0e;
     --panel-color: #151515;
+    --code-bg-color: #1a1a1a;
     --border-color: #2d2d2d;
     --note-panel-color: var(--blue);
     --atelier-details-color: var(--blue);
@@ -24,6 +26,7 @@
     --text-color: var(--white);
     --text-color-muted: var(--pale-grey);
     --titles-color: var(--yellow);
+    --inline-code-color: var(--red);
 
     /* Values */
     --docs-article-size: 750px;

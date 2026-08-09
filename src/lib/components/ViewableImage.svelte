@@ -11,7 +11,7 @@
 
 
 <div class="img-wrapper">
-    <button onclick={() => carouselStore.open(id)} aria-label="Open image carousel">
+    <button onclick={() => carouselStore.open(id)} aria-label="Open image carousel" style={showAlt ? '' : 'margin-bottom: 1rem;'}>
         <enhanced:img class="viewable-img" {src} {alt} />
     </button>
     {#if showAlt}
@@ -25,6 +25,7 @@
         display: flex;
         flex-direction: column;
         width: fit-content;
+        margin-top: 0.5em;
 
         button {
             background-color: transparent;

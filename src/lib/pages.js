@@ -22,9 +22,9 @@ export default
                 //     icon: "page-icons/decouverte.svg",
                 // },
                 {
-                    title: "Devine le nombre",
-                    slug: "devine-le-nombre",
-                    icon: "page-icons/devine-nombre.svg",
+                    title: "Hello World!",
+                    slug: "hello-world",
+                    icon: "page-icons/hello-world.svg",
                 },
                 // {
                 //     title: "Jeu de plateforme",

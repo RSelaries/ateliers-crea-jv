@@ -3,6 +3,7 @@
     import LoadingScreen from "$lib/components/LoadingScreen.svelte";
     import PageSummary from "$lib/components/PageSummary.svelte";
     import "$lib/css/article-style.css";
+    import "$lib/css/gdscript-code-snippet.css";
     
     import ImageCarousel from "$lib/components/ImageCarousel.svelte"
 
@@ -52,5 +53,6 @@
         padding: 2rem;
         background-color: var(--panel-color);
         border: 1px solid var(--border-color);
+        min-width: 0;
     }
 </style>

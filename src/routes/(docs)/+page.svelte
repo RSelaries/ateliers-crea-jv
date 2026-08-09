@@ -24,7 +24,7 @@
 <h2 id="commencer-a-creer">Je veux créer un jeu !</h2>
 <p>
     Vous pouvez commencer dès maintenant en suivant le premier atelier:
-    <Link href="atelier/devine-le-nombre">Devine le nombre</Link>.
+    <Link href="atelier/hello-world">Hello World!</Link>.
     <br>Sinon, vous pouvez suivre le <ExternalLink href="https://docs.godotengine.org/fr/4.x/getting_started/step_by_step/index.html">tutoriel officiel de Godot</ExternalLink>.
 </p>
 

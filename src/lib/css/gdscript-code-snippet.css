@@ -1,0 +1,50 @@
+pre:has(code) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--code-bg-color);
+    overflow-x: scroll;
+}
+
+code.gdscript-snippet.inline {
+    font-size: 16px;
+}
+
+code.gdscript-snippet {
+    color: #ffffffbf;
+    tab-size: 4;
+    font-size: 14px;
+
+    .keyword {
+        color: #ff7085;
+    }
+    .type {
+        color: #8fffdb;
+    }
+    .symbol {
+        color: #abc9ff;
+    }
+    .control-flow {
+        color: #ff8ccc;
+    }
+    .comment {
+        color: #ffffff80;
+    }
+    .doc-comment {
+        color: #99b3cccc;
+    }
+    .string {
+        color: #ffeda1;
+    }
+    .func {
+        color: #66e6ff;
+    }
+    .node-ref {
+        color: #63c259;
+    }
+    .global-func {
+        color: #a3a3f5;
+    }
+}

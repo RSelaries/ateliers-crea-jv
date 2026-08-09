@@ -193,5 +193,5 @@ par exemple: <span style="font-family: SpaceMono">"Documents\Godot\Editeur\Godot
     à cette page: <Link href="godot/tutoriels">tutoriels</Link>.
 </p>
 <p>
-    Sinon, vous pouvez suivre mes ateliers, en commencant par <Link href="atelier/devine-le-nombre">Devine le nombre</Link>.
+    Sinon, vous pouvez suivre mes ateliers, en commencant par <Link href="atelier/hello-world">Hello World!</Link>.
 </p>
