@@ -1,6 +1,5 @@
 <script>
     // Components
-    import GameIframe from "$lib/components/GameIframe.svelte";
     import Link from "$lib/components/Link.svelte";
     import ViewableImage from "$lib/components/ViewableImage.svelte";
     import Note from "$lib/components/Note.svelte";
