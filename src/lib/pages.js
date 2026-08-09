@@ -26,6 +26,11 @@ export default
                     slug: "hello-world",
                     icon: "page-icons/hello-world.svg",
                 },
+                {
+                    title: "Devine le nombre",
+                    slug: "devine-le-nombre",
+                    icon: "page-icons/devine-nombre.svg",
+                }
                 // {
                 //     title: "Jeu de plateforme",
                 //     slug: "jeu-de-plateforme",
