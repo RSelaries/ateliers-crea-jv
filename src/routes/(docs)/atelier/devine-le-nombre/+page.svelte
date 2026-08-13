@@ -397,5 +397,5 @@
 </code></pre>
 
 <p>
-    Si vous voulez regarder le projet en détail, il est disponible à <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
+    Si vous voulez regarder le projet en détail, le code complet est disponile dans <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
 </p>
