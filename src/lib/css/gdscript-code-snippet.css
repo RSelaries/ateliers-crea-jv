@@ -41,10 +41,22 @@ code.gdscript-snippet {
     .func {
         color: #66e6ff;
     }
-    .node-ref {
+    .node-path {
         color: #63c259;
     }
     .global-func {
         color: #a3a3f5;
+    }
+    .member-var {
+        color: #bce0ff;
+    }
+    .number {
+        color: #a1ffe0;
+    }
+    .call-func {
+        color: #57b3ff;
+    }
+    .annotation {
+        color: #ffb373;
     }
 }

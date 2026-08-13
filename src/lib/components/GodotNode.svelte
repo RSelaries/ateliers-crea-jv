@@ -5,7 +5,7 @@
 </script>
 
 
-<a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_{node.toLowerCase()}.html"><GodotIcon object={node}></GodotIcon>{node}</a>
+<a target="_blank" href="https://docs.godotengine.org/fr/stable/classes/class_{node.toLowerCase()}.html"><GodotIcon object={node}></GodotIcon>{node}</a>
 
 
 <style>

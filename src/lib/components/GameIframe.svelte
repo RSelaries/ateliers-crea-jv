@@ -1,19 +1,37 @@
 <script>
     let { src, title } = $props();
     let gameLauched = $state(false);
+    let isFullscreen = $state(false);
+
+    let gameIframe;
+
+    function onFullscreenChanged() {
+        isFullscreen = document.fullscreenElement == gameIframe;
+    }
+
+    $effect(() => {
+        document.addEventListener("fullscreenchange", onFullscreenChanged);
+        return () => document.removeEventListener("fullscreenchange", onFullscreenChanged);
+    })
 </script>
 
 
-<div class="game-iframe">
+<div class="game-iframe" bind:this={gameIframe}>
     {#if gameLauched}
-    <iframe {src} {title} frameborder="0"></iframe>
-    <div class="iframe-menu">
-        <button aria-label="Fermer le jeu"></button>
-        <button aria-label="Plein écran"></button>
+    <div class="iframe-menu-wrapper">
+        <div class="iframe-menu">
+            <button class="close-btn" title="Fermer le jeu" onclick={() => gameLauched = false}></button>
+            {#if isFullscreen}
+            <button class="disable-fullscreen-btn" title="Plein écran" onclick={() => document.exitFullscreen()}></button>
+            {:else}
+            <button class="fullscreen-btn" title="Plein écran" onclick={() => gameIframe.requestFullscreen()}></button>
+            {/if}
+        </div>
     </div>
+    <iframe {src} {title} frameborder="0"></iframe>
     {:else}
     <h1 class="title">{title}</h1>
-    <button onclick={() => gameLauched = true}>Jouer</button>
+    <button class="play" onclick={() => gameLauched = true}>Jouer</button>
     {/if}
 </div>
 
@@ -28,7 +46,7 @@
         justify-content: center;
         align-items: center;
     
-        button {
+        button.play {
             border: 2px solid var(--note-panel-color);
             color: var(--text-color);
             font: var(--title-font-style);
@@ -48,6 +66,38 @@
 
         .title {
             color: var(--text-color);
+        }
+
+        .iframe-menu-wrapper {
+            width: 100%;
+            height: 0px;
+        }
+
+        .iframe-menu {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+        }
+
+        .fullscreen-btn, .close-btn, .disable-fullscreen-btn {
+            border: none;
+            background-color: transparent;
+            background-position: center center;
+            background-size: 100% 100%;
+            width: 20px;
+            height: 20px;
+            margin: 0px;
+        }
+        .fullscreen-btn {
+            background-image: url("$lib/assets/icons/fullscreen.svg");
+        }
+        .close-btn {
+            background-image: url("$lib/assets/icons/close.svg");
+        }
+        .disable-fullscreen-btn {
+            background-image: url("$lib/assets/icons/disable-fullscreen.svg");
         }
     }
 </style>

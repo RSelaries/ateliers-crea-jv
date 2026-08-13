@@ -8,25 +8,25 @@
     import GodotNode from "$lib/components/GodotNode.svelte";
 
     // Medias
-    import creationProject from "$lib/assets/pages-medias/ateliers/devine-le-nombre/creation-projet.png";
-    import editeur1 from "$lib/assets/pages-medias/ateliers/devine-le-nombre/editeur-1.png";
-    import sceneExemple from "$lib/assets/pages-medias/ateliers/devine-le-nombre/scene-exemple.png";
-    import sceneEmpty from "$lib/assets/pages-medias/ateliers/devine-le-nombre/scene-empty.png";
-    import filesystemDefault from "$lib/assets/pages-medias/ateliers/devine-le-nombre/filesystem-default.png";
-    import filesystemExemple from "$lib/assets/pages-medias/ateliers/devine-le-nombre/filesystem-exemple.png";
-    import filesystemRightClick from "$lib/assets/pages-medias/ateliers/devine-le-nombre/filesystem-right-click.png";
-    import inspectorNode from "$lib/assets/pages-medias/ateliers/devine-le-nombre/inspector-node.png";
-    import inspectorPlayer from "$lib/assets/pages-medias/ateliers/devine-le-nombre/inspector-player.png";
-    import output from "$lib/assets/pages-medias/ateliers/devine-le-nombre/output.png";
-    import main2d from "$lib/assets/pages-medias/ateliers/devine-le-nombre/main-2d.png";
-    import main3d from "$lib/assets/pages-medias/ateliers/devine-le-nombre/main-3d.png";
-    import mainScript from "$lib/assets/pages-medias/ateliers/devine-le-nombre/main-script.png";
-    import mainGame from "$lib/assets/pages-medias/ateliers/devine-le-nombre/main-game.png";
-    import mainAssetStore from "$lib/assets/pages-medias/ateliers/devine-le-nombre/main-asset-store.png";
-    import mainPlugin from "$lib/assets/pages-medias/ateliers/devine-le-nombre/main-plugin.png";
-    import creationScene from "$lib/assets/pages-medias/ateliers/devine-le-nombre/creation-scene.gif";
-    import creationScript from "$lib/assets/pages-medias/ateliers/devine-le-nombre/creation-script.gif";
-    import helloWorld from "$lib/assets/pages-medias/ateliers/devine-le-nombre/hello-world.gif";
+    import creationProject from "$lib/assets/pages-medias/ateliers/hello-world/creation-projet.png";
+    import editeur1 from "$lib/assets/pages-medias/ateliers/hello-world/editeur-1.png";
+    import sceneExemple from "$lib/assets/pages-medias/ateliers/hello-world/scene-exemple.png";
+    import sceneEmpty from "$lib/assets/pages-medias/ateliers/hello-world/scene-empty.png";
+    import filesystemDefault from "$lib/assets/pages-medias/ateliers/hello-world/filesystem-default.png";
+    import filesystemExemple from "$lib/assets/pages-medias/ateliers/hello-world/filesystem-exemple.png";
+    import filesystemRightClick from "$lib/assets/pages-medias/ateliers/hello-world/filesystem-right-click.png";
+    import inspectorNode from "$lib/assets/pages-medias/ateliers/hello-world/inspector-node.png";
+    import inspectorPlayer from "$lib/assets/pages-medias/ateliers/hello-world/inspector-player.png";
+    import output from "$lib/assets/pages-medias/ateliers/hello-world/output.png";
+    import main2d from "$lib/assets/pages-medias/ateliers/hello-world/main-2d.png";
+    import main3d from "$lib/assets/pages-medias/ateliers/hello-world/main-3d.png";
+    import mainScript from "$lib/assets/pages-medias/ateliers/hello-world/main-script.png";
+    import mainGame from "$lib/assets/pages-medias/ateliers/hello-world/main-game.png";
+    import mainAssetStore from "$lib/assets/pages-medias/ateliers/hello-world/main-asset-store.png";
+    import mainPlugin from "$lib/assets/pages-medias/ateliers/hello-world/main-plugin.png";
+    import creationScene from "$lib/assets/pages-medias/ateliers/hello-world/creation-scene.gif";
+    import creationScript from "$lib/assets/pages-medias/ateliers/hello-world/creation-script.gif";
+    import helloWorld from "$lib/assets/pages-medias/ateliers/hello-world/hello-world.gif";
 </script>
 
 
@@ -47,9 +47,6 @@
         <li>Le GDScript</li>
     </ul>
 </details>
-
-<!-- <h2 id="jeu">Jeu</h2>
-<GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Jeu - Devine le nombre"></GameIframe> -->
 
 <h2 id="fonctionnement-de-godot">Comment fonctionne Godot ?</h2>
 <p>
@@ -217,6 +214,11 @@
 
 <h2 id="creation-d-une-scene">Création d'une scène</h2>
 <p>
+    Pour suivre cet atelier, il faut avoir préalablement créé un nouveau projet. Pour cela vous pouvez suivre
+    comment faire à la page <Link href="godot/installation-et-configuration">Godot - Pour commencer</Link>. Il vous
+    suffit de créer un projet avec le <strong>renderer</strong> <i>Compatibility</i>.
+</p>
+<p>
     Pour créer une nouvelle scène, il nous suffit de choisit le <strong>Node</strong> que nous voulons avoir
     en <strong>racine</strong> de la scène. Pour commencer, on peut simplement sélectionner
     <strong><GodotIcon object="Control"></GodotIcon> User Interface</strong>.
@@ -323,5 +325,5 @@
 </Note>
 <br>
 <p>
-    Notre premier script est fini ! La suite au prochain atelier: <Link href="atelier/devine-le-nombre">Devine le nombre</Link>
+    Notre premier script est fini ! La suite au prochain atelier: <Link href="atelier/devine-le-nombre">Devine le nombre</Link>.
 </p>

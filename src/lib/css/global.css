@@ -16,6 +16,7 @@
     --code-bg-color: #1a1a1a;
     --border-color: #2d2d2d;
     --note-panel-color: var(--blue);
+    --warning-color: var(--red);
     --atelier-details-color: var(--blue);
     --atelier-details-panel-color: rgb(from var(--blue) r g b / 0.2);
     

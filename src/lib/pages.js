@@ -103,6 +103,11 @@ export default
             title: "Ressources Supplémentaires",
             slug: "ressources-supplementaires",
             pages: [
+                {
+                    title: "Inspirations",
+                    slug: "inspirations",
+                    icon: "page-icons/inspirations.svg",
+                }
                 // {
                 //     title: "Je suis perdu",
                 //     slug: "je-suis-perdu",

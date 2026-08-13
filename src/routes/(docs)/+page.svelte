@@ -1,6 +1,7 @@
 <script>
     import ExternalLink from "$lib/components/ExternalLink.svelte"
     import Link from "$lib/components/Link.svelte"
+    import Note from "$lib/components/Note.svelte"
 </script>
 
 
@@ -20,6 +21,9 @@
     indépendant et professionnel. Mais également d'apprendre à développer des jeux vidéo en utilisant
     le moteur de jeu <ExternalLink href="https://godotengine.org/fr/">Godot</ExternalLink>.
 </p>
+<!-- <Note>
+
+</Note> -->
 
 <h2 id="commencer-a-creer">Je veux créer un jeu !</h2>
 <p>

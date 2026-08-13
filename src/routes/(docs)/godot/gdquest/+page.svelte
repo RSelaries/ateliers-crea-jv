@@ -5,6 +5,10 @@
 </script>
 
 
+<svelte:head>
+    <title>Godot - GDQuest</title>
+</svelte:head>
+
 <h1 id="pour-commencer"><small>Godot -</small> <span class="title">Aprendre GDScript de Zéro</span></h1>
 
 <Note>
