@@ -14,8 +14,8 @@
     import lineEdit from "$lib/assets/pages-medias/ateliers/devine-le-nombre/lineedit.gif";
     import label from "$lib/assets/pages-medias/ateliers/devine-le-nombre/label.gif";
     import button from "$lib/assets/pages-medias/ateliers/devine-le-nombre/button.gif";
-    import childrenNo from "$lib/assets/pages-medias/ateliers/devine-le-nombre/children-no.png";
-    import childrenYes from "$lib/assets/pages-medias/ateliers/devine-le-nombre/children-yes.png";
+    import childrenNo from "$lib/assets/pages-medias/ateliers/devine-le-nombre/children-no.png?enhanced";
+    import childrenYes from "$lib/assets/pages-medias/ateliers/devine-le-nombre/children-yes.png?enhanced";
     import testSecretNumber from "$lib/assets/pages-medias/ateliers/devine-le-nombre/test-secret-number.gif";
     import textSubmitted from "$lib/assets/pages-medias/ateliers/devine-le-nombre/text-submitted.gif";
     import testLineEdit from "$lib/assets/pages-medias/ateliers/devine-le-nombre/test-line-edit.gif";
@@ -24,7 +24,7 @@
     import randomNumber from "$lib/assets/pages-medias/ateliers/devine-le-nombre/random-number.gif";
     import buttonPressed from "$lib/assets/pages-medias/ateliers/devine-le-nombre/button-pressed.gif";
     import onready from "$lib/assets/pages-medias/ateliers/devine-le-nombre/onready.gif";
-    import noderefInfo from "$lib/assets/pages-medias/ateliers/devine-le-nombre/noderef.png";
+    import noderefInfo from "$lib/assets/pages-medias/ateliers/devine-le-nombre/noderef.png?enhanced";
     import communication from "$lib/assets/pages-medias/ateliers/devine-le-nombre/communication.gif";
 </script>
 
