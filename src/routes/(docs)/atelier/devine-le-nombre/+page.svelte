@@ -401,8 +401,8 @@
     <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
 </p>
 
-<h2 id="ameliorations">Améliorations</h2>
+<!-- <h2 id="ameliorations">Améliorations</h2>
 <p>
     Si vous voulez améliorer votre jeu, allez sur la page:
     <Link href="atelier/devine-le-nombre/ameliorations">Devine le nombre - améliorations</Link> !
-</p>
+</p> -->
