@@ -396,10 +396,10 @@
 &#9;<span class="call-func">get_tree</span><span class="symbol">().</span><span class="call-func">reload_current_scene</span><span class="symbol">()</span>
 </code></pre>
 
-<p>
+<!-- <p>
     Si vous voulez regarder le projet en détail, le code complet est disponile dans
     <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
-</p>
+</p> -->
 
 <!-- <h2 id="ameliorations">Améliorations</h2>
 <p>
