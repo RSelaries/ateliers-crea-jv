@@ -17,7 +17,11 @@
             <BurgerMenu></BurgerMenu>
             <a href="{base}/" class="site-title {onTitlePage ? 'on-title-page' : ''}" style="display: var(--header-titles-display);">Ateliers gamedev</a>
         </div>
-        <a style="display: var(--header-titles-display);" href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
+        <div class="container">
+            <a style="display: var(--header-titles-display);" target="_blank" href="https://discord.gg/t54yvf8aT">Server Discord</a>
+            |
+            <a style="display: var(--header-titles-display);" target="_blank" href="https://github.com/RSelaries/ateliers-crea-jv">Repo Github</a>
+        </div>
     </nav>
 </header>
 
@@ -60,6 +64,6 @@
     .container {
         gap: 1rem;
         display: flex;
-        /* align-items: center; */
+        align-items: center;
     }
 </style>

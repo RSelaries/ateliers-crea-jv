@@ -77,7 +77,7 @@
         color: var(--text-color);
         border: 2px solid var(--redirection-color);
         background-color: transparent;
-        border-radius: 1rem;
+        border-radius: 50px;
         cursor: pointer;
         align-items: flex-start;
 
@@ -98,6 +98,6 @@
         pointer-events: none;
     }
 
-    .nav-btn-wrapper :global(#nav-next) { padding-right: 6px; }
-    .nav-btn-wrapper :global(#nav-previous) { padding-left: 6px; }
+    .nav-btn-wrapper :global(#nav-next) { padding-right: 5px; }
+    .nav-btn-wrapper :global(#nav-previous) { padding-left: 5px; }
 </style>

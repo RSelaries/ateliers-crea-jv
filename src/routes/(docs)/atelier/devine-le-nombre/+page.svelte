@@ -99,8 +99,8 @@
     La relation parent-enfant des nodes est importante. Vérifiez bien que vos trois nodes
     sont des enfants directes de <i>Game</i>:
     <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem;">
-        <enhanced:img alt="" src={childrenYes} />
-        <enhanced:img alt="" src={childrenNo} />
+        <img alt="" src={childrenYes} />
+        <img alt="" src={childrenNo} />
     </div>
 </Warning>
 

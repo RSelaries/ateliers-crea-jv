@@ -21,9 +21,13 @@
     indépendant et professionnel. Mais également d'apprendre à développer des jeux vidéo en utilisant
     le moteur de jeu <ExternalLink href="https://godotengine.org/fr/">Godot</ExternalLink>.
 </p>
-<!-- <Note>
 
-</Note> -->
+<h2 id="serveur-discord">Server Discord</h2>
+<p>
+    En compagnon de ces ateliers, il y a un <ExternalLink href="https://discord.gg/t54yvf8aT">server discord</ExternalLink> où vous pourrez discuter avec les autres, demander
+    de l'aide et partager les jeux que vous avez créé.
+    <br>Lien d'invitation: <ExternalLink href="https://discord.gg/t54yvf8aT">https://discord.gg/t54yvf8aT</ExternalLink>.
+</p>
 
 <h2 id="commencer-a-creer">Je veux créer un jeu !</h2>
 <p>
