@@ -11,12 +11,7 @@
 
     function highlightOpenedPage() {
         var path = location.pathname;
-        // var pathClassName = path.replaceAll("/", "-");
         var pathClassName = path;
-        console.log("Opened page: ", pathClassName);
-        // if (pathClassName.startsWith("-")) {
-        //     pathClassName = pathClassName.substring(1);
-        // }
         openedPage = pathClassName;
     }
 </script>

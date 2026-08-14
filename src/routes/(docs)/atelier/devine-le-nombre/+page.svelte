@@ -1,13 +1,13 @@
 <script>
     // Components
-    import GameIframe from "$lib/components/GameIframe.svelte";
     import Link from "$lib/components/Link.svelte";
     import ViewableImage from "$lib/components/ViewableImage.svelte";
     import Note from "$lib/components/Note.svelte";
     import ExternalLink from "$lib/components/ExternalLink.svelte";
     import GodotIcon from "$lib/components/GodotIcon.svelte";
     import GodotNode from "$lib/components/GodotNode.svelte";
-    import Warning from "$lib/components/Warning.svelte";
+    // import Warning from "$lib/components/Warning.svelte";
+    // import GameIframe from "$lib/components/GameIframe.svelte";
 
     // Assets
     import creationScene from "$lib/assets/pages-medias/ateliers/devine-le-nombre/creation-scene.png";
@@ -46,7 +46,7 @@
 </details>
 
 <h2 id="jeu">Jeu</h2>
-<GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Devine le nombre"></GameIframe>
+<!-- <GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Devine le nombre"></GameIframe> -->
 
 <h2 id="creation-du-projet">Création du projet</h2>
 <p>
@@ -95,14 +95,14 @@
 </p>
 <ViewableImage src={button}></ViewableImage>
 
-<Warning>
+<!-- <Warning>
     La relation parent-enfant des nodes est importante. Vérifiez bien que vos trois nodes
     sont des enfants directes de <i>Game</i>:
     <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem;">
         <enhanced:img alt="" src={childrenYes} />
         <enhanced:img alt="" src={childrenNo} />
     </div>
-</Warning>
+</Warning> -->
 
 <h2 id="programmation-du-jeu">Programmation du jeu</h2>
 <p>
