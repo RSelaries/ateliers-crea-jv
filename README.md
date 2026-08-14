@@ -2,4 +2,4 @@
 
 Repos des ateliers:
 
-- [Devine le nombre](https://github.com/RSelaries/atelier-devine-le-nombre)
+1. [Devine le nombre](https://github.com/RSelaries/atelier-devine-le-nombre)
