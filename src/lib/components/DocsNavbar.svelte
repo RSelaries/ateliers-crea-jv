@@ -29,7 +29,7 @@
             <!-- Pages -->
             {#each category.pages as page}
             <li class="page">
-                <a class="{category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
+                <a class="{(base ? base + '-' : '')+category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                     <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                 </a>
             </li>
