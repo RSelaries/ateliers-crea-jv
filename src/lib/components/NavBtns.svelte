@@ -26,8 +26,14 @@
                     nextBtn.classList = "";
                     nextBtn.href = base + '/' + pageList[i+1];
                 }
+
+                return
             }
         }
+        nextBtn.classList = "disabled";
+        nextBtn.href = ""
+        previousBtn.classList = "disabled";
+        previousBtn.href = ""
     }
 
     $effect(updateButtonsLinks)

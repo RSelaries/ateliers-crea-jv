@@ -143,6 +143,7 @@ export const pagesTree =
 export const pageList = getPagesList()
 
 function getPagesList() {
+    // pageList starts with "" to account for the home page
     let pageList = [""];
 
     pagesTree.docs.forEach((category) => {
