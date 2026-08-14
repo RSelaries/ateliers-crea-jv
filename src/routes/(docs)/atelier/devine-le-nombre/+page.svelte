@@ -46,7 +46,7 @@
 </details>
 
 <h2 id="jeu">Jeu</h2>
-<GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Devine le nombre"></GameIframe>
+<!-- <GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Devine le nombre"></GameIframe> -->
 
 <h2 id="creation-du-projet">Création du projet</h2>
 <p>
@@ -396,13 +396,13 @@
 &#9;<span class="call-func">get_tree</span><span class="symbol">().</span><span class="call-func">reload_current_scene</span><span class="symbol">()</span>
 </code></pre>
 
-<!-- <p>
+<p>
     Si vous voulez regarder le projet en détail, le code complet est disponile dans
     <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
-</p> -->
+</p>
 
-<!-- <h2 id="ameliorations">Améliorations</h2>
+<h2 id="ameliorations">Améliorations</h2>
 <p>
     Si vous voulez améliorer votre jeu, allez sur la page:
     <Link href="atelier/devine-le-nombre/ameliorations">Devine le nombre - améliorations</Link> !
-</p> -->
+</p>
