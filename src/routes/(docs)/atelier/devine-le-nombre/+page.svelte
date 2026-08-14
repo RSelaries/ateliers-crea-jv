@@ -397,5 +397,12 @@
 </code></pre>
 
 <p>
-    Si vous voulez regarder le projet en détail, le code complet est disponile dans <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
+    Si vous voulez regarder le projet en détail, le code complet est disponile dans
+    <ExternalLink href="https://github.com/RSelaries/atelier-devine-le-nombre">ce repository</ExternalLink>.
+</p>
+
+<h2 id="ameliorations">Améliorations</h2>
+<p>
+    Si vous voulez améliorer votre jeu, allez sur la page:
+    <Link href="atelier/devine-le-nombre/ameliorations">Devine le nombre - améliorations</Link> !
 </p>

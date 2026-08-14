@@ -2,13 +2,14 @@
     /* Palette */
     --yellow: #F2BF4A;
     --blue: #65BED4;
+    --transparent-blue: #65BED44f;
     --white: #f1f1f1;
     --pale-grey: #898989;
     --red: #d68f8f;
 
     /* Rdm colors */
     --highlight-color: var(--blue);
-    --highlight-color-transparent: #65BED44f;
+    --highlight-color-transparent: var(--transparent-blue);
     
     /* Background and border colors */
     --background-color: #0e0e0e;
@@ -74,6 +75,7 @@ body {
         --header-titles-display: flex;
         --header-titles-burger-display: none;
         --article-margin: 2rem;
+        --nav-btn-margin: 0px;
     }
 }
 
@@ -86,6 +88,7 @@ body {
         --header-titles-display: flex;
         --header-titles-burger-display: none;
         --article-margin: 2rem;
+        --nav-btn-margin: 0px;
     }
 }
 
@@ -98,6 +101,7 @@ body {
         --header-titles-display: flex;
         --header-titles-burger-display: none;
         --article-margin: 2rem;
+        --nav-btn-margin: 0px;
     }
 }
 
@@ -110,5 +114,6 @@ body {
         --page-summary-display: none;
         --header-titles-burger-display: flex;
         --article-margin: 0px;
+        --nav-btn-margin: 2rem;
     }
 }

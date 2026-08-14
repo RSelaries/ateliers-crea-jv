@@ -2,10 +2,11 @@
     import DocsNavbar from "$lib/components/DocsNavbar.svelte";
     import LoadingScreen from "$lib/components/LoadingScreen.svelte";
     import PageSummary from "$lib/components/PageSummary.svelte";
+    import ImageCarousel from "$lib/components/ImageCarousel.svelte";
+    import NavBtns from "$lib/components/NavBtns.svelte";
+    
     import "$lib/css/article-style.css";
     import "$lib/css/gdscript-code-snippet.css";
-    
-    import ImageCarousel from "$lib/components/ImageCarousel.svelte"
 
     let { children } = $props();
 </script>
@@ -17,9 +18,12 @@
         <DocsNavbar></DocsNavbar>
     </div>
     
-    <article class="docs-article">
-        {@render children()}
-    </article>
+    <div class="article-wrapper">
+        <article class="docs-article">
+            {@render children()}
+        </article>
+        <NavBtns></NavBtns>
+    </div>
 
     <div class="sidebar-wrapper">
         <PageSummary></PageSummary>
@@ -46,9 +50,13 @@
         max-width: var(--side-bars-size);
     }
 
-    .docs-article {
+    .article-wrapper {
+        min-width: 0;
         max-width: var(--docs-article-size);
         flex: 1;
+    }
+
+    .docs-article {
         margin: var(--article-margin, 2rem) 0;
         padding: 2rem;
         background-color: var(--panel-color);

@@ -1,4 +1,4 @@
-export default
+export const pagesTree =
 {
     docs: [
         // {
@@ -30,6 +30,13 @@ export default
                     title: "Devine le nombre",
                     slug: "devine-le-nombre",
                     icon: "page-icons/devine-nombre.svg",
+                    subpages: [
+                        {
+                            title: "Améliorations",
+                            slug: "ameliorations",
+                            icon: "page-icons/plus-loin.svg",
+                        }
+                    ],
                 }
                 // {
                 //     title: "Jeu de plateforme",
@@ -132,3 +139,27 @@ export default
         },
     ],
 };
+
+export const pageList = getPagesList()
+
+function getPagesList() {
+    let pageList = [""];
+
+    pagesTree.docs.forEach((category) => {
+        let categorySlug = category.slug;
+        category.pages.forEach((page) => {
+            let pageSlug = categorySlug + (page.slug ? "/" : "") + page.slug;
+
+            pageList.push(pageSlug);
+
+            if (page.subpages) {
+                page.subpages.forEach((subpage) => {
+                    let subpageSlug = pageSlug + "/" + subpage.slug;
+                    pageList.push(subpageSlug);
+                });
+            }
+        });
+    });
+
+    return pageList;
+}

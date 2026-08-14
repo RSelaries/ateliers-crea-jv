@@ -2,7 +2,7 @@
     import { afterNavigate } from '$app/navigation';
     import { base } from "$app/paths";
     import { onMount } from "svelte";
-    import pages from "$lib/pages";
+    import { pagesTree } from "$lib/pages";
 
     let { burgerMenu = false } = $props();
     let openedPage = $state("");
@@ -22,36 +22,16 @@
 
 <nav style={burgerMenu ? "display: flex;" : ''}>
     <!-- Categories -->
-    {#each pages.docs as category}
+    {#each pagesTree.docs as category}
     <details class="category" open>
         <summary>{category.title}</summary>
         <ol>
             <!-- Pages -->
             {#each category.pages as page}
             <li class="page">
-                {#if page.subpages}
-                <details open>
-                    <summary>
-                        <a class="{category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
-                            <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
-                        </a>
-                    </summary>
-                    <ol class="subpages-list">
-                        <!-- Subpages (if there are any) -->
-                        {#each page.subpages as subpage}
-                        <li>
-                            <a class="subpage {category.slug}{page.slug ? '-' + page.slug : ''}-{subpage.slug}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}/{subpage.slug}">
-                                <div style="mask-image: url({base}/{subpage.icon});" class="page-icon"></div>{subpage.title}
-                            </a>
-                        </li>
-                        {/each}
-                    </ol>
-                </details>
-                {:else}
                 <a class="{category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                     <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                 </a>
-                {/if}
             </li>
             {/each}
         </ol>
@@ -90,18 +70,7 @@
         background-image: url('$lib/assets/icons/folder-opened.svg');
     }
 
-    .category li.page > details:open {
-        ol.subpages-list {
-            margin: 0;
-            padding-left: 20px;
-    
-            li::marker {
-                content: none;
-            }
-        }
-    }
-
-    .category ol {
+    .category > ol {
         margin: 10px 0;
         padding: 0;
     }
@@ -135,5 +104,7 @@
             background-color: var(--nav-titles-color);
         }
     }
-    li.page details summary::marker { content: ''; }
+
+    /* Sub pages */
+
 </style>
