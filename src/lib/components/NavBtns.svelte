@@ -8,7 +8,7 @@
         let nextBtn = document.querySelector(".nav-btn-wrapper #nav-next");
 
         for (let i = 0; i < pageList.length; i++) {
-            if ((base ? base : '/') + pageList[i] == document.location.pathname) {
+            if (base + '/' + pageList[i] == document.location.pathname) {
                 if (i == 0) {
                     previousBtn.classList = "disabled";
                     previousBtn.href = ""
