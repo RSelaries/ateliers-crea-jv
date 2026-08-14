@@ -46,7 +46,7 @@
 </details>
 
 <h2 id="jeu">Jeu</h2>
-<!-- <GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Devine le nombre"></GameIframe> -->
+<GameIframe src="https://rselaries.github.io/atelier-devine-le-nombre" title="Devine le nombre"></GameIframe>
 
 <h2 id="creation-du-projet">Création du projet</h2>
 <p>

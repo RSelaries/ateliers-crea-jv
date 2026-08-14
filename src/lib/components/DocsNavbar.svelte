@@ -11,10 +11,12 @@
 
     function highlightOpenedPage() {
         var path = location.pathname;
-        var pathClassName = path.replaceAll("/", "-");
-        if (pathClassName.startsWith("-")) {
-            pathClassName = pathClassName.substring(1);
-        }
+        // var pathClassName = path.replaceAll("/", "-");
+        var pathClassName = path;
+        console.log("Opened page: ", pathClassName);
+        // if (pathClassName.startsWith("-")) {
+        //     pathClassName = pathClassName.substring(1);
+        // }
         openedPage = pathClassName;
     }
 </script>
@@ -29,7 +31,7 @@
             <!-- Pages -->
             {#each category.pages as page}
             <li class="page">
-                <a class="{(base ? base + '-' : '')+category.slug+(page.slug ? '-' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
+                <a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                     <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                 </a>
             </li>
