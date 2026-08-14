@@ -17,7 +17,7 @@
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div aria-label="Close carousel" class="carousel-backdrop" onclick={() => carouselStore.close()}>
     <button class="carousel-btn previous" aria-label="Previous image" onclick={(e) => {e.stopPropagation(); carouselStore.previous()}}></button>
-    <img src={carouselStore.images[carouselStore.currentIndex]?.src} alt={carouselStore.images[carouselStore.currentIndex]?.alt}>
+    <img src={carouselStore.images[carouselStore.currentIndex]?.src} alt={carouselStore.images[carouselStore.currentIndex]?.alt} />
     <button class="carousel-btn next" aria-label="Next image" onclick={(e) => {e.stopPropagation(); carouselStore.next()}}></button>
 </div>
 {/if}

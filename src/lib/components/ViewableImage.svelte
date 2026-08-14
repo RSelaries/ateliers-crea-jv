@@ -12,7 +12,7 @@
 
 <div class="img-wrapper">
     <button onclick={() => carouselStore.open(id)} aria-label="Open image carousel" style={showAlt ? '' : 'margin-bottom: 1rem;'}>
-        <enhanced:img class="viewable-img" {src} {alt} />
+        <img class="viewable-img" {src} {alt} />
     </button>
     {#if showAlt}
     <small class="img-alt">{alt}</small>
