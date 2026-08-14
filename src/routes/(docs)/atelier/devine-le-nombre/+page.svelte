@@ -309,7 +309,7 @@
 <Note>
     Il est important de rester appuyé sur <i>Ctrl</i> pour que la ligne script soit bien ajouté. Godot affiche les
     cette fenêtre au moment de glisser un node:
-    <enhanced:img src={noderefInfo} style="margin-top: 1rem;" />
+    <enhanced:img src={noderefInfo} alt="" style="margin-top: 1rem;" />
 </Note>
 
 <ViewableImage src={onready}></ViewableImage>
