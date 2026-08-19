@@ -15,11 +15,11 @@
     <nav>
         <div class="container">
             <BurgerMenu></BurgerMenu>
-            <a href="{base}/" class="site-title {onTitlePage ? 'on-title-page' : ''}" style="display: var(--header-titles-display);">Ateliers gamedev</a>
+            <a href="{base}/" class="site-title {onTitlePage ? 'on-title-page' : ''}">Ateliers gamedev</a>
         </div>
         <div class="container">
             <a style="display: var(--header-titles-display);" target="_blank" href="https://discord.gg/t54yvf8aT">Server Discord</a>
-            |
+            <span style="display: var(--header-titles-display);">|</span>
             <a style="display: var(--header-titles-display);" target="_blank" href="https://github.com/RSelaries/ateliers-crea-jv">Repo Github</a>
         </div>
     </nav>

@@ -28,8 +28,9 @@
     <div class="navbar-background">
         <div style="display:flex; flex-direction: column; justify-content: start; gap: 2rem;">
             <div style="display: var(--header-titles-burger-display); flex-direction: column; gap: 0.5rem;">
-                <a href="{base}/" class="site-title">Ateliers gamedev</a>
-                <a href="https://github.com/RSelaries/ateliers-gamejam" class="logo">Repo Github</a>
+                <!-- <a href="{base}/" class="site-title">Ateliers gamedev</a> -->
+                <a target="_blank" href="https://discord.gg/t54yvf8aT">Server Discord</a>
+                <a target="_blank" href="https://github.com/RSelaries/ateliers-crea-jv">Repo Github</a>
             </div>
             <DocsNavbar burgerMenu={true}></DocsNavbar>
         </div>

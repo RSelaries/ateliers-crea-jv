@@ -107,6 +107,10 @@
         font-family: Lineal;
     }
 
+    ol, ul {
+        padding: 0 2rem;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font: var(--article-titles-font-style);
         scroll-margin-top: 7rem;
