@@ -22,4 +22,6 @@
 <Note>
     Cet atelier n'a pas encore été créé. Si vous avez des quetions vous pouvez me demander sur le
     <ExternalLink href="https://discord.gg/t54yvf8aT">Discord</ExternalLink>.
+    <br><br>
+    En attendant, vous pouvez allez voir la page <Link href="godot/interface">Interface</Link>.
 </Note>

@@ -22,6 +22,11 @@ export const pagesTree =
                         }
                     ],
                 },
+                {
+                    title: "Jeu de plateforme",
+                    slug: "jeu-de-plateforme",
+                    icon: "page-icons/platformer.svg",
+                },
                 // {
                 //     title: "Menu",
                 //     slug: "menu",
@@ -37,6 +42,11 @@ export const pagesTree =
                     title: "Pour commencer",
                     slug: "installation-et-configuration",
                     icon: "page-icons/installation-et-configuration.svg",
+                },
+                {
+                    title: "Interface",
+                    slug: "interface",
+                    icon: "page-icons/control.svg",
                 },
                 {
                     title: "GDQuest",

@@ -42,6 +42,12 @@
     <ul>
         <li>Le GDScript</li>
         <li>Le système de Nodes et Scènes</li>
+        <li>Les nodes:</li>
+        <ul>
+            <li><GodotNode node="LineEdit"></GodotNode></li>
+            <li><GodotNode node="Label"></GodotNode></li>
+            <li><GodotNode node="Button"></GodotNode></li>
+        </ul>
     </ul>
 </details>
 

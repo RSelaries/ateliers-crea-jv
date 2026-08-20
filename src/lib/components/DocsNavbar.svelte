@@ -62,6 +62,7 @@
         background-size: 24px;
         background-repeat: no-repeat;
         background-position: top left;
+        user-select: none;
     }
     details.category:open > summary {
         background-image: url('$lib/assets/icons/folder-opened.svg');

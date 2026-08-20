@@ -80,7 +80,8 @@
         > *:not(summary) {
             padding-left: 4rem;
             padding-right: 4rem;
-            font: var(--nav-font-style);
+            /* font: var(--nav-font-style); */
+            font: var(--text-font-style);
         }
     }
     

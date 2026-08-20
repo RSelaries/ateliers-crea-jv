@@ -144,7 +144,7 @@
 <p>
     Pour créer une interface dans Godot, on utilise les nodes de la famille <GodotNode node="Control"></GodotNode>.
     Nous allons ici créer une interface très simple, pour plus de détails, vous pouvez aller voir l'atelier
-    <Link href="atelier/menu">Menu</Link>, ou alors la
+    <Link href="atelier/menu">Menu</Link>, la page <Link href="godot/interface">Interface</Link> ou alors la
     <ExternalLink href="https://docs.godotengine.org/fr/4.x/tutorials/ui/">documentation Godot</ExternalLink>.
 </p>
 
