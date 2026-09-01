@@ -44,6 +44,10 @@
     details {
         border: 2px solid var(--atelier-details-color);
         border-radius: 1rem;
+
+        details {
+            
+        }
     
         summary {
             border-radius: 1rem;

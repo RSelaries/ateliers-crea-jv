@@ -25,11 +25,47 @@
         <ol>
             <!-- Pages -->
             {#each category.pages as page}
+            <!-- If subpages -->
+            {#if page.subpages}
+            <li class="page">
+                {#if openedPage.includes(base+'/'+category.slug+(page.slug ? '/' + page.slug : ''))}
+                <details open>
+                    <summary class="opened"><div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}</summary>
+                    <ol>
+                        <li><a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
+                            Atelier
+                        </a></li>
+                        {#each page.subpages as subpage}
+                        <li><a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '')+'/'+subpage.slug == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}/{subpage.slug}">
+                            {subpage.title}
+                        </a></li>
+                        {/each}
+                    </ol>
+                </details>
+                {:else}
+                <details>
+                    <summary><div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}</summary>
+                    <ol>
+                        <li><a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
+                            Atelier
+                        </a></li>
+                        {#each page.subpages as subpage}
+                        <li><a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '')+'/'+subpage.slug == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}/{subpage.slug}">
+                            {subpage.title}
+                        </a></li>
+                        {/each}
+                    </ol>
+                </details>
+                {/if}
+            </li>
+            <!-- If no subpages -->
+            {:else}
             <li class="page">
                 <a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                     <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
                 </a>
             </li>
+            {/if}
             {/each}
         </ol>
     </details>
@@ -96,13 +132,25 @@
     li.page a:hover {
         text-decoration: underline dashed;
     }
-    li.page a:hover, li.page a.opened {
+    li.page a:hover, li.page a.opened,
+    li.page li:has(a.opened), li.page li:has(a):hover,
+    li.page details > summary.opened {
         color: var(--nav-titles-color);
         .page-icon {
             background-color: var(--nav-titles-color);
         }
     }
 
-    /* Sub pages */
-
+    li.page:has(details) {
+        details > summary {
+            display: inline-flex;
+            cursor: pointer;
+        }
+        details > summary:hover {
+            color: var(--nav-titles-color);
+            .page-icon {
+                background-color: var(--nav-titles-color);
+            }
+        }
+    }
 </style>

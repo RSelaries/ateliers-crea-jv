@@ -44,3 +44,6 @@
         </details>
     </ul>
 </details>
+
+<h2 id="jeu">Jeu</h2>
+<GameIframe src="https://rselaries.github.io/atelier-jeu-de-plateforme/"></GameIframe>

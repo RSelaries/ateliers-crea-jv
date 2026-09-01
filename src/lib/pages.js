@@ -23,6 +23,11 @@ export const pagesTree =
                     ],
                 },
                 {
+                    title: "Flappy Bird",
+                    slug: "flappy-bird",
+                    icon: "page-icons/flappy-bird.svg",
+                },
+                {
                     title: "Jeu de plateforme",
                     slug: "jeu-de-plateforme",
                     icon: "page-icons/platformer.svg",

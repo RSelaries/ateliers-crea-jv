@@ -31,7 +31,7 @@
     <iframe {src} {title} frameborder="0"></iframe>
     {:else}
     <h1 class="title">{title}</h1>
-    <button class="play" onclick={() => gameLauched = true}>Jouer</button>
+    <button class="play" onclick={() => {gameLauched = true; gameIframe.requestFullscreen()}}>Jouer</button>
     {/if}
 </div>
 
