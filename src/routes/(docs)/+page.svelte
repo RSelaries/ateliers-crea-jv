@@ -39,5 +39,5 @@
 <h2 id="participer-aux-ateliers">Je veux participer aux ateliers</h2>
 <p>
     Tous les ateliers seront disponibles sous forme textuelle sur ce site, mais ils prendront
-    également place dans les locaux de <b>Sirius Productions</b> au <i>*adresse*</i> tous les vendredis de <i>19h à 22h</i>.
+    également place dans les locaux de <b>Sirius Productions</b> au <i>145 Rue Belliard, 75018 Paris (Maison Belliard)</i> tous les vendredis de <i>19h à 22h</i>.
 </p>

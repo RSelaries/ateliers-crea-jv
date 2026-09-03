@@ -28,6 +28,12 @@
     import pipe3 from "$lib/assets/pages-medias/ateliers/flappy-bird/pipe-3.png";
     import pipe4 from "$lib/assets/pages-medias/ateliers/flappy-bird/pipe-4.png";
     import pipe5 from "$lib/assets/pages-medias/ateliers/flappy-bird/pipe-5.gif";
+    import export1 from "$lib/assets/pages-medias/ateliers/flappy-bird/export-1.png";
+    import export2 from "$lib/assets/pages-medias/ateliers/flappy-bird/export-2.png";
+    import game1 from "$lib/assets/pages-medias/ateliers/flappy-bird/game-1.gif";
+    import game2 from "$lib/assets/pages-medias/ateliers/flappy-bird/game-2.gif";
+    import game3 from "$lib/assets/pages-medias/ateliers/flappy-bird/game-3.png";
+    import game4 from "$lib/assets/pages-medias/ateliers/flappy-bird/game-4.png";
 </script>
 
 
@@ -493,3 +499,118 @@
 </code></pre>
 
 <h2 id="assemblage">Assemblage</h2>
+<p>
+    Maintenant qu'on a un personnage et des tuyaux, il ne nous reste plus qu'à tout mettre ensemble.
+    Pour cela, on va retourner à la scène <i>Game</i>, puis lui ajouter un script
+    <small>(<GodotIcon object="ScriptCreate"></GodotIcon>)</small>.
+</p>
+<p>
+    On veut créer un jeu infini, avec des tuyaux qui apparaissent à droite de l'écran et disparaissent
+    à gauche. On pourrait simplement faire un très, <strong>très</strong> long niveau à la main. Mais
+    le niveau serait constamment le même, et un très bon joueur pourrais éventuellement arriver à la fin.
+</p>
+
+<h3 id="instancier-une-scene">Instancier une scène</h3>
+<p>
+    Au lieu d'ajouter la scène du tuyau à la main, on va l'<strong>instancier</strong> dans le script de
+    notre scène <i>Game</i>. Pour ça on commence par prendre une référence à cette scène:
+</p>
+
+<pre><code class="gdscript-snippet"><span class="keyword">extends</span> <span class="type">Node2D</span>
+
+
+<span class="annotation">@export</span> <span class="keyword">var</span> <span class="member-var">pipe_scene</span><span class="symbol">:</span> <span class="type">PackedScene</span>
+</code></pre>
+
+<Note>
+    L'annotation <code class="gdscript-snippet inline"><span class="annotation">@export</span></code>
+    permet de rendre une variable visible dans l'<strong>inspecteur</strong>:
+    <ViewableImage showAlt alt="Une variable non-exportée." src={export1}></ViewableImage>
+    <ViewableImage showAlt alt="Une variable exportée et visible dans l'inspecteur." src={export2}></ViewableImage>
+</Note>
+
+<p>
+    On peut dès à présent glisser la scène <i>Pipe</i> dans la propriété <code>pipe_scene</code>.
+</p>
+<ViewableImage showAlt alt="Ajout de la référence de la scène 'Pipe' à la propriété 'pipe_scene' de 'Game'." src={game1}></ViewableImage>
+
+<p>
+    Ça nous permet d'instancier cette scène via code:
+</p>
+
+<Note>
+    Instancier est le fait de créer une <i>instance</i> <small>(une copie)</small> d'un objet, ici une scène.
+</Note>
+
+<pre><code class="gdscript-snippet"><span class="keyword">extends</span> <span class="type">Node2D</span>
+
+
+<span class="annotation">@export</span> <span class="keyword">var</span> <span class="member-var">pipe_scene</span><span class="symbol">:</span> <span class="type">PackedScene</span>
+
+
+<span class="keyword">func</span> <span class="func">_ready</span><span class="symbol">() -> <span class="type">void</span>:</span>
+&#9;<span class="keyword">var</span> new_pipe <span class="symbol">= <span class="member-var">pipe_scene</span>.<span class="call-func">instantiate</span>()</span>
+&#9;<span class="call-func">add_child</span><span class="symbol">(</span>new_pipe<span class="symbol">)</span>
+&#9;new_pipe<span class="symbol">.<span class="member-var">global_position</span> = <span class="type">Vector2</span>(<span class="number">1260</span>, <span class="number">324</span>)</span>
+</code></pre>
+
+<p>
+    Ce qui nous donne:
+</p>
+
+<ViewableImage showAlt alt="Test de l'instanciation du tuyau." src={game2}></ViewableImage>
+
+<p>
+    On peut mettre tout ça dans une fonction pour pouvoir le réutiliser:
+</p>
+
+<pre><code class="gdscript-snippet"><span class="keyword">extends</span> <span class="type">Node2D</span>
+
+
+<span class="annotation">@export</span> <span class="keyword">var</span> <span class="member-var">pipe_scene</span><span class="symbol">:</span> <span class="type">PackedScene</span>
+
+
+<span class="keyword">func</span> <span class="func">_ready</span><span class="symbol">() -> <span class="type">void</span>:</span>
+&#9;<span class="call-func">spawn_pipe</span><span class="symbol">()</span>
+
+
+<span class="keyword">func</span> <span class="func">spawn_pipe</span><span class="symbol">() -> <span class="type">void</span>:</span>
+&#9;<span class="keyword">var</span> new_pipe <span class="symbol">= <span class="member-var">pipe_scene</span>.<span class="call-func">instantiate</span>()</span>
+&#9;<span class="call-func">add_child</span><span class="symbol">(</span>new_pipe<span class="symbol">)</span>
+&#9;new_pipe<span class="symbol">.<span class="member-var">global_position</span> = <span class="type">Vector2</span>(<span class="number">1260</span>, <span class="number">324</span>)</span>
+</code></pre>
+
+
+<h3 id="boucle">Boucle</h3>
+<p>
+    On aimerait maintenant pouvoir instancier un tuyau en boucle pendant tout le jeu. Il existe un node parfait pour
+    ça, un: <GodotNode node="Timer"></GodotNode>. On ajoute donc un timer à notre scène, on change son <code>wait_time</code>
+    et on <code>autostart</code> et on connecte son signal <code>timeout</code> à notre code.
+</p>
+
+<ViewableImage showAlt alt="Ajout du Timer." src={game3}></ViewableImage>
+<ViewableImage showAlt alt="Connection du signal 'timeout' du Timer." src={game4}></ViewableImage>
+
+<p>
+    Puis au moment où le timer a fini, on instancie un nouveau tuyau:
+</p>
+
+<pre><code class="gdscript-snippet"><span class="keyword">extends</span> <span class="type">Node2D</span>
+
+
+<span class="comment">[...]</span>
+
+
+<span class="keyword">func</span> <span class="func">_on_timer_timeout</span><span class="symbol">() -> <span class="type">void</span>:</span>
+&#9;<span class="call-func">spawn_pipe</span><span class="symbol">()</span>
+</code></pre>
+
+<h2 id="fini">C'est fini !</h2>
+<p>
+    On a maintenant un clone de <i>Flappy Bird</i> jouable. Si vous voulez continuer de développer ce jeu, vous pouvez
+    aller voir la page <Link href="atelier/flappy-bird/exercices">exercices</Link>.
+</p>
+<p>
+    Le code du jeu complet est disponnible
+    <ExternalLink href="https://github.com/RSelaries/atelier-flappy-bird">ici</ExternalLink>.
+</p>

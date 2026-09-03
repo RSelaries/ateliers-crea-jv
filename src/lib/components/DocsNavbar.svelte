@@ -145,6 +145,7 @@
         details > summary {
             display: inline-flex;
             cursor: pointer;
+            width: 100%;
         }
         details > summary:hover {
             color: var(--nav-titles-color);
