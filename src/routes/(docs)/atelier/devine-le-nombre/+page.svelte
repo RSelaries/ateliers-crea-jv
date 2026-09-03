@@ -37,7 +37,7 @@
 <p>
     Dans cet atelier, nous allons créer un jeu "devine le nombre".
 </p>
-<details>
+<details class="concepts">
     <summary>Concepts abordés</summary>
     <ul>
         <li>Le GDScript</li>
@@ -64,7 +64,7 @@
     <li>une <i>scène</i> avec un node <GodotNode node="Control"></GodotNode> à la racine</li>
     <li>un script attaché au node racine</li>
 </ul>
-<ViewableImage src={creationScene}></ViewableImage>
+<ViewableImage showAlt alt="La scène de jeu principale. Un Control renommé 'Game'." src={creationScene}></ViewableImage>
 
 <h2 id="creation-scene-de-jeu">Création de la scène de jeu</h2>
 <p>
@@ -80,7 +80,7 @@
     On va donc ajouter ces trois éléments à la scène. D'abord, pour permettre au joueur d'entrer du texte, on peut
     utiliser le node <GodotNode node="LineEdit"></GodotNode>:
 </p>
-<ViewableImage src={lineEdit}></ViewableImage>
+<ViewableImage showAlt alt="Ajout d'un LineEdit au millieu de l'écran." src={lineEdit}></ViewableImage>
 
 <Note>
     Pour ajouter un enfant à un node, il faut le sélectionner dans le panel
@@ -93,13 +93,13 @@
     depuis l'<Link href="atelier/hello-world#panel-inspector">inspecteur</Link>. On peut y mettre un titre comme
     <i>"Entrez un nombre"</i>.
 </p>
-<ViewableImage src={label}></ViewableImage>
+<ViewableImage showAlt alt="Ajout d'un Label au millieu de l'écran." src={label}></ViewableImage>
 
 <p>
     Enfin, on ajoute un bouton, représenté par le node <GodotNode node="Button"></GodotNode>. On peut y ajouter du
     texte en modifiant sa propriété <code>text</code>:
 </p>
-<ViewableImage src={button}></ViewableImage>
+<ViewableImage showAlt alt="Ajout d'un bouton au millieu de l'écran." src={button}></ViewableImage>
 
 <Warning>
     La relation parent-enfant des nodes est importante. Vérifiez bien que vos trois nodes
@@ -164,7 +164,7 @@
 <p>
     Maintenant, si on lance le jeu, on peut lire <i>67</i> dans l'<Link href="atelier/hello-world#panel-output">Output</Link>:
 </p>
-<ViewableImage src={testSecretNumber}></ViewableImage>
+<ViewableImage showAlt alt="L'Output affiche '67'." src={testSecretNumber}></ViewableImage>
 
 <Note title="Rappel">
     Pour tester le jeu, il faut appuyer sur le bouton <GodotIcon object="PlayScene"></GodotIcon>,
@@ -182,7 +182,7 @@
     <i>connecter</i> le signal. Pour cela, il faut sélectionner le node, puis ouvrir le panel <strong>Signals</strong>
     <small>(par défaut, il est à côté de l'inspecteur)</small> et enfin connecter le signal:
 </p>
-<ViewableImage src={textSubmitted}></ViewableImage>
+<ViewableImage showAlt alt="Connection du signal text_submitted du LineEdit au script de Game." src={textSubmitted}></ViewableImage>
 
 <p>
     Ça nous créé alors une nouvelle fonction, <strong>cette fonction sera appellée au moment où le signal sera émit</strong>.
@@ -200,7 +200,7 @@
 &#9;<span class="global-func">print</span><span class="symbol">(</span>new_text<span class="symbol">)</span>
 </code></pre>
 
-<ViewableImage src={testLineEdit}></ViewableImage>
+<ViewableImage showAlt alt="Test du signal." src={testLineEdit}></ViewableImage>
 
 <Note>
     Pour que le signal <code>text_submitted</code> soit émit, il faut appuyer sur la touche <i>Entrée</i>.
@@ -228,7 +228,7 @@
 <p>
     Voyons ce que cela fait:
 </p>
-<ViewableImage src={testInt}></ViewableImage>
+<ViewableImage showAlt alt="Test du constructeur int()." src={testInt}></ViewableImage>
 
 <p>
     Maintenant on vas <strong>comparer</strong> la réponse du joueur avec le <code>secret_nomber</code>. Pour cela,
@@ -252,7 +252,7 @@
 &#9;&#9;<span class="global-func">print</span><span class="symbol">(</span><span class="string">"Trouvé !"</span><span class="symbol">)</span>
 </code></pre>
 
-<ViewableImage src={testComparaisons}></ViewableImage>
+<ViewableImage showAlt alt="Test des comparaisons '>' et '<'." src={testComparaisons}></ViewableImage>
 
 <h3 id="aleatoire">Aléatoire</h3>
 <p>
@@ -269,7 +269,7 @@
 &#9;<span class="global-func">print</span><span class="symbol">(</span><span class="string">"Nombre secret: "</span><span class="symbol">,</span> <span class="member-var">secret_number</span><span class="symbol">)</span>
 </code></pre>
 
-<ViewableImage src={randomNumber}></ViewableImage>
+<ViewableImage showAlt alt="Test du nombre secret." src={randomNumber}></ViewableImage>
 
 <p>
     À présent, à chaque fois que nous lançons le jeu, le <code>secret_number</code> est choisi aléatoirement entre
@@ -283,7 +283,7 @@
     à notre script. Plus précisément, on va connecter son signal <code>pressed</code>:
 </p>
 
-<ViewableImage src={buttonPressed}></ViewableImage>
+<ViewableImage showAlt alt="Connection du signal pressed du Button." src={buttonPressed}></ViewableImage>
 
 <p>
     Pour recommencer, il nous suffit d'appeler la fonction
@@ -318,7 +318,7 @@
     <enhanced:img src={noderefInfo} alt="" style="margin-top: 1rem;" />
 </Note>
 
-<ViewableImage src={onready}></ViewableImage>
+<ViewableImage showAlt alt="Référence au node Label à l'aide de l'annotation @onready." src={onready}></ViewableImage>
 
 <pre><code class="gdscript-snippet"><span class="annotation">@onready</span> <span class="keyword">var</span> <span class="member-var">label</span><span class="symbol">:</span> <span class="type">Label</span> <span class="symbol">=</span> <span class="node-path">$Label</span>
 </code></pre>
@@ -366,7 +366,7 @@
 <p>
     Ce qui nous donne:
 </p>
-<ViewableImage src={communication}></ViewableImage>
+<ViewableImage showAlt alt="Le Label affiche l'indice." src={communication}></ViewableImage>
 
 <h2 id="code-complet">Code complet</h2>
 <p>

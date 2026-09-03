@@ -15,10 +15,10 @@
     img {
         max-width: 100%;
         border: 1px solid var(--border-color);
-        /* margin-top: 0.5em; */
     }
 
     small {
+        --text-color: var(--text-color-muted);
         color: var(--text-color-muted);
         font-size: 0.8em;
     }
@@ -42,14 +42,21 @@
     }
 
     details {
+        summary {
+            cursor: pointer;
+        }
+    }
+    details[open] {
+        summary {
+            margin-bottom: 1rem;
+        }
+    }
+
+    details.concepts {
         border: 2px solid var(--atelier-details-color);
         border-radius: 1rem;
-
-        details {
-            
-        }
     
-        summary {
+        > summary {
             border-radius: 1rem;
             background-color: var(--atelier-details-panel-color);
             padding: 0.5rem 2rem;
@@ -57,11 +64,12 @@
             font-weight: 900;
             font-size: 1.2rem;
             cursor: pointer;
+            text-box-trim: trim-end;
         }
-        summary::marker {
+        > summary::marker {
             content: "";
         }
-        summary::before {
+        > summary::before {
             content: '';
             display: inline-block;
             background-image: url("$lib/assets/icons/details-icon.svg");
@@ -73,12 +81,12 @@
             transition: all 0.2s;
         }
     }
-    details[open] {
-        summary {
+    details[open].concepts {
+        > summary {
             border-radius: 1rem 1rem 0 0;
             margin-bottom: 1rem;
         }
-        summary::before {
+        > summary::before {
             transform: rotate(0deg);
         }
         > *:not(summary) {

@@ -17,7 +17,7 @@
         text-decoration: underline dashed;
 
         :global(img) {
-            margin-right: 0.5rem;
+            margin-right: 0.2rem;
         }
     }
     a:hover {

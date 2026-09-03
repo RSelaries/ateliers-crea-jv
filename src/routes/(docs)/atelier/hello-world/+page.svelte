@@ -39,7 +39,7 @@
 <p>
     Dans cet atelier, nous allons découvrir l'interface de Godot et créer notre premier script.
 </p>
-<details>
+<details class="concepts">
     <summary>Concepts abordés</summary>
     <ul>
         <li>L'interface de Godot</li>

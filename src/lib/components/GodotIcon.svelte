@@ -8,3 +8,9 @@
 
 <img style="border: none;" src="{base}/godot-icons/{object}.svg" alt="{object}" />
 
+
+<style>
+    img {
+        height: 1em;
+    }
+</style>

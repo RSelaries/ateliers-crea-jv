@@ -16,11 +16,11 @@
 </svelte:head>
 
 
-<h1 id="jeu-de-plateforme"><small>Atelier 3 -</small> <span class="title">Jeu de plateforme</span></h1>
+<h1 id="jeu-de-plateforme"><small>Atelier 4 -</small> <span class="title">Jeu de plateforme</span></h1>
 <p>
     Dans cet atelier, nous allons créer un jeu de plateforme.
 </p>
-<details>
+<details class="concepts">
     <summary>Concepts abordés</summary>
     <ul>
         <li>La physique</li>
@@ -33,17 +33,16 @@
             <li><GodotNode node="Area2D"></GodotNode></li>
             <li><GodotNode node="Sprite2D"></GodotNode></li>
         </ul>
-        <details>
+        <!-- <details>
             <summary>Tous les nodes</summary>
             <ul>
                 <li><GodotNode node="Sprite2D"></GodotNode></li>
                 <li><GodotNode node="Node2D"></GodotNode></li>
                 <li><GodotNode node="AnimatedSprite2D"></GodotNode></li>
-                <li><GodotNode node=""></GodotNode></li>
             </ul>
-        </details>
+        </details> -->
     </ul>
 </details>
 
 <h2 id="jeu">Jeu</h2>
-<GameIframe src="https://rselaries.github.io/atelier-jeu-de-plateforme/"></GameIframe>
+<GameIframe title="Jeu de Plateforme" src="https://rselaries.github.io/atelier-jeu-de-plateforme/"></GameIframe>
