@@ -17,7 +17,7 @@
 </script>
 
 
-<nav style={burgerMenu ? "display: flex;" : ''}>
+<nav class={burgerMenu ? "burger-menu" : ""}>
     <!-- Categories -->
     {#each pagesTree.docs as category}
     <details class="category" open>
@@ -30,7 +30,9 @@
             <li class="page">
                 {#if openedPage.includes(base+'/'+category.slug+(page.slug ? '/' + page.slug : ''))}
                 <details open>
-                    <summary class="opened"><div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}</summary>
+                    <summary class="opened">
+                        <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
+                    </summary>
                     <ol>
                         <li><a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                             Atelier
@@ -44,7 +46,9 @@
                 </details>
                 {:else}
                 <details>
-                    <summary><div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}</summary>
+                    <summary>
+                        <div style="mask-image: url({base}/{page.icon});" class="page-icon"></div>{page.title}
+                    </summary>
                     <ol>
                         <li><a class="{base+'/'+category.slug+(page.slug ? '/' + page.slug : '') == openedPage ? 'opened' : ''}" href="{base}/{category.slug}{page.slug ? '/' + page.slug : ''}">
                             Atelier
@@ -80,6 +84,15 @@
         margin-right: 2rem;
         display: var(--docs-navbar-main-display);
         flex-direction: column;
+        width: min-content;
+    }
+    nav.burger-menu {
+        display: flex;
+        font-size: 18px;
+
+        details.category > summary {
+            font-size: 22px;
+        }
     }
 
 
@@ -146,6 +159,9 @@
             display: inline-flex;
             cursor: pointer;
             width: 100%;
+            /* position: relative;
+            left: -20px; */
+            /* padding-left: 20px; */
         }
         details > summary:hover {
             color: var(--nav-titles-color);

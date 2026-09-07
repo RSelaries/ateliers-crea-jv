@@ -24,7 +24,7 @@
 <button onclick={() => opened = !opened} class="{opened ? 'opened' : ''} burger-btn" aria-label="Toggle page navbar">
 </button>
 
-<button aria-label="Close page navbar" onclick={() => opened = false} class="navbar-wrapper {opened ? 'opened' : ''}">
+<div class="navbar-wrapper {opened ? 'opened' : ''}">
     <div class="navbar-background">
         <div style="display:flex; flex-direction: column; justify-content: start; gap: 2rem;">
             <div style="display: var(--header-titles-burger-display); flex-direction: column; gap: 0.5rem;">
@@ -36,7 +36,8 @@
         </div>
         <div class="gradient"></div>
     </div>
-</button>
+    <button class="close-btn" aria-label="Close page navbar" onclick={() => opened = false}></button>
+</div>
 
 
 <style>
@@ -60,7 +61,15 @@
         cursor: pointer;
     }
 
+    .close-btn {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        border-radius: 0px;
+    }
+
     .navbar-wrapper {
+        font-size: 18px;
         display: none;
         z-index: -1;
         display: none;
