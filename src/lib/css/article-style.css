@@ -74,8 +74,8 @@
             display: inline-block;
             background-image: url("$lib/assets/icons/details-icon.svg");
             background-size: contain;
-            width: 1rem;
-            height: 1rem;
+            width: 14px;
+            height: 14px;
             margin-right: 0.5rem;
             transform: rotate(-90deg);
             transition: all 0.2s;

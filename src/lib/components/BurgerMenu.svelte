@@ -1,4 +1,5 @@
 <script>
+    import { afterNavigate } from "$app/navigation"
     import { base } from "$app/paths"; 
     import DocsNavbar from "./DocsNavbar.svelte"
     import ViewableImage from "./ViewableImage.svelte";
@@ -6,6 +7,10 @@
     let opened = $state(false);
 
     function onResize() {opened = false;}
+
+    afterNavigate(() => {
+        opened = false;
+    });
 
     $effect(() => {
         if (opened) {

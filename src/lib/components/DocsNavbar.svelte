@@ -156,12 +156,11 @@
 
     li.page:has(details) {
         details > summary {
-            display: inline-flex;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             cursor: pointer;
             width: 100%;
-            /* position: relative;
-            left: -20px; */
-            /* padding-left: 20px; */
         }
         details > summary:hover {
             color: var(--nav-titles-color);

@@ -63,4 +63,10 @@
         border: 1px solid var(--border-color);
         min-width: 0;
     }
+
+    @media (max-width: 700px) {
+        .docs-article {
+            border: none;
+        }
+    }
 </style>

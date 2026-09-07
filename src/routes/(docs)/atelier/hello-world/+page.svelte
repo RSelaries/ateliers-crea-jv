@@ -235,7 +235,7 @@
 
 <p>
     Chaque node de Godot contient par défaut des propriétés et des comportements. Par exemple, un <GodotNode node="Node2D"></GodotNode>
-    et tous ces descendants ont une propriété de <code>position</code>, de <code>rotation</code>, de <code>scale</code>
+    et tous ses descendants ont une propriété de <code>position</code>, de <code>rotation</code>, de <code>scale</code>
     <small>(échelle)</small>.
 </p>
 <p>

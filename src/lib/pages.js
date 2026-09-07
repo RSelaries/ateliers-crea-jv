@@ -25,12 +25,12 @@ export const pagesTree =
                     title: "Flappy Bird",
                     slug: "flappy-bird",
                     icon: "page-icons/flappy-bird.svg",
-                    subpages: [
-                        {
-                            title: "Exercices",
-                            slug: "exercices",
-                        },
-                    ],
+                    // subpages: [
+                    //     {
+                    //         title: "Exercices",
+                    //         slug: "exercices",
+                    //     },
+                    // ],
                 },
                 {
                     title: "Jeu de plateforme",
