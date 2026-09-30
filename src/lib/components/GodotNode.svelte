@@ -15,6 +15,7 @@
         color: var(--text-color);
         font-style: italic;
         text-decoration: underline dashed;
+        font-weight: 400;
 
         :global(img) {
             margin-right: 0.2rem;

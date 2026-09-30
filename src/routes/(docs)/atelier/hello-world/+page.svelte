@@ -51,11 +51,11 @@
 <h2 id="fonctionnement-de-godot">Comment fonctionne Godot ?</h2>
 <p>
     Dans <i>Godot</i>, tous nos éléments de jeu sont des <strong><GodotIcon object="Node"></GodotIcon> Nodes</strong>
-    <small>(noeuds)</small>. On peut créer des collections de nodes sous forme de
+    <small>(nœuds)</small>. On peut créer des collections de nodes sous forme de
     <strong><GodotIcon object="PackedScene"></GodotIcon> Scènes</strong>.
 </p>
 <p>
-    S'il on voulait créer un personnage par exemple, on créerait une scène qui contient un <GodotNode node="Sprite2D"></GodotNode>
+    Si l'on voulait créer un personnage par exemple, on créerait une scène qui contient un <GodotNode node="Sprite2D"></GodotNode>
     <small>(pour afficher l'image du personnage)</small>, un <GodotNode node="CharacterBody2D"></GodotNode>
     <small>(pour que le personnage puisse se déplacer)</small> etc.
 </p>

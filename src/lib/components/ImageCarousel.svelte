@@ -17,7 +17,10 @@
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div aria-label="Close carousel" class="carousel-backdrop" onclick={() => carouselStore.close()}>
     <button class="carousel-btn previous" aria-label="Previous image" onclick={(e) => {e.stopPropagation(); carouselStore.previous()}}></button>
-    <img src={carouselStore.images[carouselStore.currentIndex]?.src} alt={carouselStore.images[carouselStore.currentIndex]?.alt} />
+    <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
+        <img src={carouselStore.images[carouselStore.currentIndex]?.src} alt={carouselStore.images[carouselStore.currentIndex]?.alt} />
+        <p>{carouselStore.images[carouselStore.currentIndex]?.alt}</p>
+    </div>
     <button class="carousel-btn next" aria-label="Next image" onclick={(e) => {e.stopPropagation(); carouselStore.next()}}></button>
 </div>
 {/if}
@@ -36,8 +39,8 @@
         padding-top: var(--top-padding);
         width: calc(100% - calc(var(--side-padding) * 2));
         height: calc(100% - calc(var(--side-padding) + var(--top-padding)));
-        background-color: #0004;
-        backdrop-filter: blur(2px);
+        background-color: #0008;
+        backdrop-filter: blur(4px);
         z-index: 2;
         display: flex;
         flex-direction: row;
@@ -76,6 +79,10 @@
         width: 100%;
         height: 100%;
         grid-area: carousel;
+    }
+
+    p {
+        text-align: center;
     }
 
     @media (orientation: portrait) {
