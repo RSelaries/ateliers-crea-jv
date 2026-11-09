@@ -319,7 +319,7 @@
 <ViewableImage src={helloWorld} alt="Test du jeu. La phrase 'Hello World!' apparait dans l'output."></ViewableImage>
 
 <Note>
-    Essayer de mettre la ligne de code
+    Essayez de mettre la ligne de code
     <code class="gdscript-snippet inline"><span class="global-func">print</span><span class="symbol">(</span><span class="string">"Hello World!"</span><span class="symbol">)</span></code>
     dans la fonction <code class="gdscript-snippet inline"><span class="func">_process</span></code> pour voir la différence.
 </Note>
